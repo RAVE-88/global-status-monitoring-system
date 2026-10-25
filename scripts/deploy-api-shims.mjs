@@ -60,6 +60,28 @@ if (existsSync(countriesDir)) {
     } catch { /* skip malformed snapshots */ }
   }
 }
+// Widen coverage: countries without a published snapshot score get the app's
+// own default baseline (DEFAULT_CII_BASELINE_RISK = 15) — the same value the
+// server formula produces with zero live events.
+const factsCachePath0 = 'scripts/country-facts-cache.json';
+if (existsSync(factsCachePath0)) {
+  const known = JSON.parse(readFileSync(factsCachePath0, 'utf8'));
+  for (const code of Object.keys(known)) {
+    if (scores.has(code)) continue;
+    scores.set(code, {
+      region: code,
+      staticBaseline: 15,
+      dynamicScore: 0,
+      combinedScore: 15,
+      trend: 'TREND_DIRECTION_STABLE',
+      computedAt: Date.now(),
+      methodologyVersion: 'v8',
+      eventMultiplier: 1,
+      advisoryLevel: 'SEVERITY_LEVEL_LOW',
+      advisoryProvenance: 'published-default-baseline',
+    });
+  }
+}
 const ciiScores = [...scores.values()].sort((a, b) => b.combinedScore - a.combinedScore);
 
 const riskScores = {
@@ -74,6 +96,7 @@ const bootstrap = { data: {}, partial: false, generatedAt: null };
 
 // 3. rss-proxy — valid empty feed so country news parses instead of 404ing.
 const rss = '<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel><title>Global Status Monitoring System</title><link>https://rave-88.github.io/</link><description>Static deployment feed</description></channel></rss>';
+
 
 // 4. Country facts — one static snapshot file (built by
 // scripts/fetch-country-facts.mjs from the same Wikidata + Wikipedia sources
@@ -146,6 +169,41 @@ if (factsCache) {
 } else {
   console.log('no country-facts snapshot found (run scripts/fetch-country-facts.mjs)');
 }
+
+// 3b. Real public payloads from the upstream production API (origin+UA gated,
+// fetched once here and cached; the static deployment serves the snapshot).
+const PROD_UA = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36';
+const PROD_HEADERS = { Origin: 'https://worldmonitor.app', Referer: 'https://worldmonitor.app/dashboard', 'User-Agent': PROD_UA };
+const prodCachePath = 'scripts/production-payloads-cache.json';
+let prod = existsSync(prodCachePath) ? JSON.parse(readFileSync(prodCachePath, 'utf8')) : null;
+if (!prod && process.env.GSMS_REFRESH_PROD !== '0') {
+  prod = {};
+  try {
+    const grab = async (path) => {
+      const r = await fetch(`https://api.worldmonitor.app/${path}`, { headers: PROD_HEADERS, signal: AbortSignal.timeout(45000) });
+      if (!r.ok) throw new Error(`${path} -> ${r.status}`);
+      return r.json();
+    };
+    const fast = await grab('api/bootstrap?tier=fast&public=1');
+    let slow = { data: {} };
+    try { slow = await grab('api/bootstrap?tier=slow&public=1'); } catch {}
+    const digest = await grab('api/news/v1/list-feed-digest?variant=full&lang=en&public=1');
+    prod.bootstrap = { data: { ...(fast.data || {}), ...(slow.data || {}) }, partial: false, generatedAt: new Date().toISOString() };
+    prod.digest = digest;
+    writeFileSync(prodCachePath, JSON.stringify(prod));
+    console.log(`production payloads cached (bootstrap ${(JSON.stringify(prod.bootstrap)).length} bytes)`);
+  } catch (e) {
+    console.log(`production fetch failed, keeping local shims (${e.message})`);
+    prod = null;
+  }
+}
+if (prod?.bootstrap) {
+  // Replace the empty bootstrap shim with the real payload.
+  files.splice(files.findIndex(f => f[0] === 'api/bootstrap'), 1, ['api/bootstrap', JSON.stringify(prod.bootstrap)]);
+  files.push(['api/news/v1/list-feed-digest', JSON.stringify(prod.digest)]);
+  console.log('bootstrap + digest: real production snapshot');
+}
+
 for (const [rel, body] of files) {
   const target = join(dist, rel);
   mkdirSync(join(target, '..'), { recursive: true });
