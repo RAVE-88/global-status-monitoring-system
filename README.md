@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="docs/assets/readme/logo.svg" width="110" alt="GSMS logo"/>
+  <img src="docs/assets/readme/logo.svg?v=2" width="110" alt="GSMS logo"/>
 
 # Global Status Monitoring System
 
@@ -11,7 +11,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](src/)
 [![License](https://img.shields.io/badge/License-AGPL_v3-blue?style=for-the-badge)](LICENSE)
 
-<img src="docs/assets/readme/hero.svg" width="100%" alt="GSMS banner"/>
+<img src="docs/assets/readme/hero.svg?v=2" width="100%" alt="GSMS banner"/>
 
 *Course project for 241AI005 Machine Learning, B.Tech CSE, 5th semester.*
 
@@ -34,14 +34,14 @@ We wanted our Machine Learning course project to be something you can actually o
 
 ## A 30 second tour
 
-<img src="docs/assets/readme/demo.gif" width="100%" alt="GSMS in motion: map, panels, country briefs"/>
+<img src="docs/assets/readme/demo.gif?v=2" width="100%" alt="GSMS in motion: map, panels, country briefs"/>
 
 | | |
 |---|---|
-| <img src="docs/assets/readme/dashboard.png" width="100%" alt="GSMS dashboard"/> | <img src="docs/assets/readme/country-brief.png" width="100%" alt="Country brief sidebar"/> |
+| <img src="docs/assets/readme/dashboard.png?v=2" width="100%" alt="GSMS dashboard"/> | <img src="docs/assets/readme/country-brief.png?v=2" width="100%" alt="Country brief sidebar"/> |
 | **The dashboard.** Live map with conflict zones, quakes, military activity and risk shading, plus streaming panels. | **The country brief.** Click any of 239 countries for its Instability Index, facts, news and context. |
 
-<img src="docs/assets/readme/cii-panel.png" width="70%" alt="Country Instability Index panel"/>
+<img src="docs/assets/readme/cii-panel.png?v=2" width="70%" alt="Country Instability Index panel"/>
 
 *The Country Instability panel: ranked risk scores with trend arrows, one row per country, refreshed from live signals.*
 
@@ -57,7 +57,7 @@ We wanted our Machine Learning course project to be something you can actually o
 
 One pipeline, two engines. The Python lab is the source of truth for reproducible experiments, and the browser lab mirrors it so the dashboard can score events as they arrive.
 
-<img src="docs/assets/readme/pipeline.svg" width="100%" alt="GSMS ML pipeline: sources to risk engine"/>
+<img src="docs/assets/readme/pipeline.svg?v=2" width="100%" alt="GSMS ML pipeline: sources to risk engine"/>
 
 ```mermaid
 flowchart LR
@@ -97,7 +97,7 @@ flowchart LR
 
 Built from **2,919 raw articles** (2,409 after cleaning, 510 near duplicates removed) and **1,875 earthquakes**, with a strictly future test split (1,686 train / 361 validation / 362 test) and seed 42 pinned everywhere.
 
-<img src="docs/assets/readme/chart-accuracy.svg" width="100%" alt="Test accuracy by model"/>
+<img src="docs/assets/readme/chart-accuracy.svg?v=2" width="100%" alt="Test accuracy by model"/>
 
 | model | accuracy | precision (macro) | recall (macro) | F1 (macro) | 5-fold CV accuracy |
 |---|---|---|---|---|---|
@@ -128,7 +128,7 @@ Random Forest also gave us the most useful explanation: `sentiment_score` (0.336
 
 We care about honest evaluation, so the test set is strictly in the future relative to training (no leakage), cross-validation folds are chronological rather than random, and the report shows the ugly numbers next to the good ones.
 
-<img src="docs/assets/readme/chart-overfit.svg" width="100%" alt="Bias-variance sweep across tree depth"/>
+<img src="docs/assets/readme/chart-overfit.svg?v=2" width="100%" alt="Bias-variance sweep across tree depth"/>
 
 <details>
 <summary><strong>The regularisation path (why the flat curves are a good sign)</strong></summary>

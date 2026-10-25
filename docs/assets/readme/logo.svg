@@ -8,23 +8,23 @@
   </defs>
   <circle cx="64" cy="64" r="52" fill="url(#g)" stroke="#58a6ff" stroke-width="2.5"/>
   <ellipse cx="64" cy="64" rx="52" ry="20" fill="none" stroke="#7ee787" stroke-width="1.6" opacity="0.85">
-    <animateTransform attributeName="transform" type="rotate" from="0 64 64" to="360 64 64" dur="14s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="rotate" from="0 64 64" to="360 64 64" dur="22s" repeatCount="indefinite"/>
   </ellipse>
   <ellipse cx="64" cy="64" rx="20" ry="52" fill="none" stroke="#58a6ff" stroke-width="1.2" opacity="0.6"/>
   <ellipse cx="64" cy="64" rx="40" ry="52" fill="none" stroke="#58a6ff" stroke-width="1.2" opacity="0.45"/>
   <line x1="12" y1="64" x2="116" y2="64" stroke="#58a6ff" stroke-width="1.2" opacity="0.6"/>
   <circle cx="86" cy="38" r="5" fill="#f97316">
-    <animate attributeName="r" values="3.5;6;3.5" dur="2s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="1;0.55;1" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="3.5;6;3.5" dur="3.4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;0.55;1" dur="3.4s" repeatCount="indefinite"/>
   </circle>
   <circle cx="40" cy="76" r="4" fill="#f78166">
-    <animate attributeName="r" values="5;2.8;5" dur="2.6s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="5;2.8;5" dur="4.4s" repeatCount="indefinite"/>
   </circle>
   <circle cx="72" cy="84" r="3.4" fill="#7ee787">
-    <animate attributeName="r" values="2.6;5;2.6" dur="3.1s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="2.6;5;2.6" dur="5.2s" repeatCount="indefinite"/>
   </circle>
   <circle cx="64" cy="64" r="58" fill="none" stroke="#58a6ff" stroke-width="1" opacity="0.5">
-    <animate attributeName="r" values="54;62;54" dur="3.5s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.55;0.08;0.55" dur="3.5s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="54;62;54" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.55;0.08;0.55" dur="6s" repeatCount="indefinite"/>
   </circle>
 </svg>

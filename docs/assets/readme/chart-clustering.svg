@@ -3,22 +3,22 @@
 <text x="24" y="34" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="17" font-weight="700" fill="#f0f6fc">Silhouette score by clustering algorithm</text>
 <text x="238" y="88" text-anchor="end" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5" fill="#e6edf3">Agglomerative (Ward)</text>
 <rect x="250" y="64" width="490" height="34" rx="7" fill="#21262d"/>
-<rect x="250" y="64" rx="7" height="34" width="0" fill="#7ee787"><animate attributeName="width" values="0;490;490" keyTimes="0;0.1;1" dur="9s" begin="0.0s" repeatCount="indefinite" calcMode="spline" keySplines="0.2 0.7 0.3 1;0 0 1 1"/></rect>
+<rect x="250" y="64" rx="7" height="34" width="0" fill="#7ee787"><animate attributeName="width" values="0;490;490" keyTimes="0;0.82;1" dur="24s" begin="0.0s" repeatCount="indefinite" calcMode="spline" keySplines="0.15 0.6 0.25 1;0 0 1 1"/></rect>
 <text x="750" y="88" font-family="Consolas, Menlo, monospace" font-size="13.5" fill="#e6edf3">0.827</text>
 <text x="238" y="136" text-anchor="end" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5" fill="#e6edf3">K-Means on LSA embeddings</text>
 <rect x="250" y="112" width="490" height="34" rx="7" fill="#21262d"/>
-<rect x="250" y="112" rx="7" height="34" width="0" fill="#58a6ff"><animate attributeName="width" values="0;447;447" keyTimes="0;0.1;1" dur="9s" begin="0.12s" repeatCount="indefinite" calcMode="spline" keySplines="0.2 0.7 0.3 1;0 0 1 1"/></rect>
+<rect x="250" y="112" rx="7" height="34" width="0" fill="#58a6ff"><animate attributeName="width" values="0;447;447" keyTimes="0;0.82;1" dur="24s" begin="0.12s" repeatCount="indefinite" calcMode="spline" keySplines="0.15 0.6 0.25 1;0 0 1 1"/></rect>
 <text x="707" y="136" font-family="Consolas, Menlo, monospace" font-size="13.5" fill="#e6edf3">0.754</text>
 <text x="238" y="184" text-anchor="end" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5" fill="#e6edf3">DBSCAN</text>
 <rect x="250" y="160" width="490" height="34" rx="7" fill="#21262d"/>
-<rect x="250" y="160" rx="7" height="34" width="0" fill="#d2a8ff"><animate attributeName="width" values="0;409;409" keyTimes="0;0.1;1" dur="9s" begin="0.24s" repeatCount="indefinite" calcMode="spline" keySplines="0.2 0.7 0.3 1;0 0 1 1"/></rect>
+<rect x="250" y="160" rx="7" height="34" width="0" fill="#d2a8ff"><animate attributeName="width" values="0;409;409" keyTimes="0;0.82;1" dur="24s" begin="0.24s" repeatCount="indefinite" calcMode="spline" keySplines="0.15 0.6 0.25 1;0 0 1 1"/></rect>
 <text x="669" y="184" font-family="Consolas, Menlo, monospace" font-size="13.5" fill="#e6edf3">0.690</text>
 <text x="238" y="232" text-anchor="end" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5" fill="#e6edf3">GMM (EM)</text>
 <rect x="250" y="208" width="490" height="34" rx="7" fill="#21262d"/>
-<rect x="250" y="208" rx="7" height="34" width="0" fill="#f78166"><animate attributeName="width" values="0;272;272" keyTimes="0;0.1;1" dur="9s" begin="0.36s" repeatCount="indefinite" calcMode="spline" keySplines="0.2 0.7 0.3 1;0 0 1 1"/></rect>
+<rect x="250" y="208" rx="7" height="34" width="0" fill="#f78166"><animate attributeName="width" values="0;272;272" keyTimes="0;0.82;1" dur="24s" begin="0.36s" repeatCount="indefinite" calcMode="spline" keySplines="0.15 0.6 0.25 1;0 0 1 1"/></rect>
 <text x="532" y="232" font-family="Consolas, Menlo, monospace" font-size="13.5" fill="#e6edf3">0.459</text>
 <text x="238" y="280" text-anchor="end" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5" fill="#e6edf3">K-Means++</text>
 <rect x="250" y="256" width="490" height="34" rx="7" fill="#21262d"/>
-<rect x="250" y="256" rx="7" height="34" width="0" fill="#f97316"><animate attributeName="width" values="0;166;166" keyTimes="0;0.1;1" dur="9s" begin="0.48s" repeatCount="indefinite" calcMode="spline" keySplines="0.2 0.7 0.3 1;0 0 1 1"/></rect>
+<rect x="250" y="256" rx="7" height="34" width="0" fill="#f97316"><animate attributeName="width" values="0;166;166" keyTimes="0;0.82;1" dur="24s" begin="0.48s" repeatCount="indefinite" calcMode="spline" keySplines="0.15 0.6 0.25 1;0 0 1 1"/></rect>
 <text x="426" y="280" font-family="Consolas, Menlo, monospace" font-size="13.5" fill="#e6edf3">0.281</text>
 </svg>

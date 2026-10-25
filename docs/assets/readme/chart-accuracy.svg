@@ -3,34 +3,34 @@
 <text x="24" y="34" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="17" font-weight="700" fill="#f0f6fc">Test accuracy by model (holdout, chronological split)</text>
 <text x="238" y="88" text-anchor="end" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5" fill="#e6edf3">Random Forest</text>
 <rect x="250" y="64" width="490" height="34" rx="7" fill="#21262d"/>
-<rect x="250" y="64" rx="7" height="34" width="0" fill="#7ee787"><animate attributeName="width" values="0;490;490" keyTimes="0;0.1;1" dur="9s" begin="0.0s" repeatCount="indefinite" calcMode="spline" keySplines="0.2 0.7 0.3 1;0 0 1 1"/></rect>
+<rect x="250" y="64" rx="7" height="34" width="0" fill="#7ee787"><animate attributeName="width" values="0;490;490" keyTimes="0;0.82;1" dur="24s" begin="0.0s" repeatCount="indefinite" calcMode="spline" keySplines="0.15 0.6 0.25 1;0 0 1 1"/></rect>
 <text x="750" y="88" font-family="Consolas, Menlo, monospace" font-size="13.5" fill="#e6edf3">0.9917</text>
 <text x="238" y="136" text-anchor="end" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5" fill="#e6edf3">Bagging (stumps)</text>
 <rect x="250" y="112" width="490" height="34" rx="7" fill="#21262d"/>
-<rect x="250" y="112" rx="7" height="34" width="0" fill="#58a6ff"><animate attributeName="width" values="0;489;489" keyTimes="0;0.1;1" dur="9s" begin="0.12s" repeatCount="indefinite" calcMode="spline" keySplines="0.2 0.7 0.3 1;0 0 1 1"/></rect>
+<rect x="250" y="112" rx="7" height="34" width="0" fill="#58a6ff"><animate attributeName="width" values="0;489;489" keyTimes="0;0.82;1" dur="24s" begin="0.12s" repeatCount="indefinite" calcMode="spline" keySplines="0.15 0.6 0.25 1;0 0 1 1"/></rect>
 <text x="749" y="136" font-family="Consolas, Menlo, monospace" font-size="13.5" fill="#e6edf3">0.9890</text>
 <text x="238" y="184" text-anchor="end" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5" fill="#e6edf3">RBF SVM</text>
 <rect x="250" y="160" width="490" height="34" rx="7" fill="#21262d"/>
-<rect x="250" y="160" rx="7" height="34" width="0" fill="#d2a8ff"><animate attributeName="width" values="0;489;489" keyTimes="0;0.1;1" dur="9s" begin="0.24s" repeatCount="indefinite" calcMode="spline" keySplines="0.2 0.7 0.3 1;0 0 1 1"/></rect>
+<rect x="250" y="160" rx="7" height="34" width="0" fill="#d2a8ff"><animate attributeName="width" values="0;489;489" keyTimes="0;0.82;1" dur="24s" begin="0.24s" repeatCount="indefinite" calcMode="spline" keySplines="0.15 0.6 0.25 1;0 0 1 1"/></rect>
 <text x="749" y="184" font-family="Consolas, Menlo, monospace" font-size="13.5" fill="#e6edf3">0.9890</text>
 <text x="238" y="232" text-anchor="end" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5" fill="#e6edf3">Linear SVM</text>
 <rect x="250" y="208" width="490" height="34" rx="7" fill="#21262d"/>
-<rect x="250" y="208" rx="7" height="34" width="0" fill="#f78166"><animate attributeName="width" values="0;487;487" keyTimes="0;0.1;1" dur="9s" begin="0.36s" repeatCount="indefinite" calcMode="spline" keySplines="0.2 0.7 0.3 1;0 0 1 1"/></rect>
+<rect x="250" y="208" rx="7" height="34" width="0" fill="#f78166"><animate attributeName="width" values="0;487;487" keyTimes="0;0.82;1" dur="24s" begin="0.36s" repeatCount="indefinite" calcMode="spline" keySplines="0.15 0.6 0.25 1;0 0 1 1"/></rect>
 <text x="747" y="232" font-family="Consolas, Menlo, monospace" font-size="13.5" fill="#e6edf3">0.9862</text>
 <text x="238" y="280" text-anchor="end" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5" fill="#e6edf3">AdaBoost</text>
 <rect x="250" y="256" width="490" height="34" rx="7" fill="#21262d"/>
-<rect x="250" y="256" rx="7" height="34" width="0" fill="#f97316"><animate attributeName="width" values="0;487;487" keyTimes="0;0.1;1" dur="9s" begin="0.48s" repeatCount="indefinite" calcMode="spline" keySplines="0.2 0.7 0.3 1;0 0 1 1"/></rect>
+<rect x="250" y="256" rx="7" height="34" width="0" fill="#f97316"><animate attributeName="width" values="0;487;487" keyTimes="0;0.82;1" dur="24s" begin="0.48s" repeatCount="indefinite" calcMode="spline" keySplines="0.15 0.6 0.25 1;0 0 1 1"/></rect>
 <text x="747" y="280" font-family="Consolas, Menlo, monospace" font-size="13.5" fill="#e6edf3">0.9862</text>
 <text x="238" y="328" text-anchor="end" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5" fill="#e6edf3">k-NN (k=5)</text>
 <rect x="250" y="304" width="490" height="34" rx="7" fill="#21262d"/>
-<rect x="250" y="304" rx="7" height="34" width="0" fill="#7ee787"><animate attributeName="width" values="0;486;486" keyTimes="0;0.1;1" dur="9s" begin="0.6s" repeatCount="indefinite" calcMode="spline" keySplines="0.2 0.7 0.3 1;0 0 1 1"/></rect>
+<rect x="250" y="304" rx="7" height="34" width="0" fill="#7ee787"><animate attributeName="width" values="0;486;486" keyTimes="0;0.82;1" dur="24s" begin="0.6s" repeatCount="indefinite" calcMode="spline" keySplines="0.15 0.6 0.25 1;0 0 1 1"/></rect>
 <text x="746" y="328" font-family="Consolas, Menlo, monospace" font-size="13.5" fill="#e6edf3">0.9834</text>
 <text x="238" y="376" text-anchor="end" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5" fill="#e6edf3">Logistic Regression</text>
 <rect x="250" y="352" width="490" height="34" rx="7" fill="#21262d"/>
-<rect x="250" y="352" rx="7" height="34" width="0" fill="#58a6ff"><animate attributeName="width" values="0;483;483" keyTimes="0;0.1;1" dur="9s" begin="0.72s" repeatCount="indefinite" calcMode="spline" keySplines="0.2 0.7 0.3 1;0 0 1 1"/></rect>
+<rect x="250" y="352" rx="7" height="34" width="0" fill="#58a6ff"><animate attributeName="width" values="0;483;483" keyTimes="0;0.82;1" dur="24s" begin="0.72s" repeatCount="indefinite" calcMode="spline" keySplines="0.15 0.6 0.25 1;0 0 1 1"/></rect>
 <text x="743" y="376" font-family="Consolas, Menlo, monospace" font-size="13.5" fill="#e6edf3">0.9779</text>
 <text x="238" y="424" text-anchor="end" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5" fill="#e6edf3">Gaussian Naive Bayes</text>
 <rect x="250" y="400" width="490" height="34" rx="7" fill="#21262d"/>
-<rect x="250" y="400" rx="7" height="34" width="0" fill="#d2a8ff"><animate attributeName="width" values="0;91;91" keyTimes="0;0.1;1" dur="9s" begin="0.84s" repeatCount="indefinite" calcMode="spline" keySplines="0.2 0.7 0.3 1;0 0 1 1"/></rect>
+<rect x="250" y="400" rx="7" height="34" width="0" fill="#d2a8ff"><animate attributeName="width" values="0;91;91" keyTimes="0;0.82;1" dur="24s" begin="0.84s" repeatCount="indefinite" calcMode="spline" keySplines="0.15 0.6 0.25 1;0 0 1 1"/></rect>
 <text x="351" y="424" font-family="Consolas, Menlo, monospace" font-size="13.5" fill="#e6edf3">0.1851</text>
 </svg>
