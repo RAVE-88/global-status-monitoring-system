@@ -29,14 +29,14 @@ jobs:
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
           ref: gh-pages
+      - name: Prune CI metadata from published site
+        run: rm -rf .github
       - name: Fail on unexpected dotfiles
         run: |
-          extra=$(find . -maxdepth 1 -name '.*' ! -name '.' ! -name '.nojekyll' -print)
+          extra=$(find . -maxdepth 1 -name '.*' ! -name '.' ! -name '.nojekyll' ! -name '.well-known' -print)
           if [ -n "$extra" ]; then
             echo "Unexpected dotfiles in deploy tree:"; echo "$extra"; exit 1
           fi
-      - name: Prune CI metadata from published site
-        run: rm -rf .github
       - name: Configure Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
       - name: Upload site artifact
