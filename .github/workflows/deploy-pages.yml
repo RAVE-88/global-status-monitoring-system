@@ -30,7 +30,7 @@ jobs:
         with:
           ref: gh-pages
       - name: Prune CI metadata from published site
-        run: rm -rf .github
+        run: rm -rf .github .git
       - name: Fail on unexpected dotfiles
         run: |
           extra=$(find . -maxdepth 1 -name '.*' ! -name '.' ! -name '.nojekyll' ! -name '.well-known' -print)
