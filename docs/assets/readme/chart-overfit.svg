@@ -15,7 +15,7 @@
 <text x="491" y="372" text-anchor="middle" font-family="Consolas, monospace" font-size="11" fill="#8b949e">7</text>
 <text x="635" y="372" text-anchor="middle" font-family="Consolas, monospace" font-size="11" fill="#8b949e">9</text>
 <text x="778" y="372" text-anchor="middle" font-family="Consolas, monospace" font-size="11" fill="#8b949e">11</text>
-<path d="M60 210 L132 210 L204 218 L275 228 L347 241 L419 258 L491 265 L563 275 L635 282 L706 292 L778 302 L850 313" fill="none" stroke="#7ee787" stroke-width="2.5" stroke-linejoin="round"><animate attributeName="stroke-dasharray" from="0 2000" to="2000 0" dur="2.2s" fill="freeze"/></path>
+<path d="M60 210 L132 210 L204 218 L275 228 L347 241 L419 258 L491 265 L563 275 L635 282 L706 292 L778 302 L850 313" fill="none" stroke="#7ee787" stroke-width="2.5" stroke-linejoin="round"><animate attributeName="stroke-dasharray" values="0 2000;2000 0;2000 0" keyTimes="0;0.2;1" dur="14s" repeatCount="indefinite"/></path>
 <circle cx="60" cy="210" r="3.2" fill="#7ee787"/>
 <circle cx="132" cy="210" r="3.2" fill="#7ee787"/>
 <circle cx="204" cy="218" r="3.2" fill="#7ee787"/>
@@ -28,7 +28,7 @@
 <circle cx="706" cy="292" r="3.2" fill="#7ee787"/>
 <circle cx="778" cy="302" r="3.2" fill="#7ee787"/>
 <circle cx="850" cy="313" r="3.2" fill="#7ee787"/>
-<path d="M60 298 L132 298 L204 290 L275 274 L347 282 L419 274 L491 234 L563 171 L635 171 L706 107 L778 210 L850 114" fill="none" stroke="#f78166" stroke-width="2.5" stroke-linejoin="round"><animate attributeName="stroke-dasharray" from="0 2000" to="2000 0" dur="2.2s" fill="freeze"/></path>
+<path d="M60 298 L132 298 L204 290 L275 274 L347 282 L419 274 L491 234 L563 171 L635 171 L706 107 L778 210 L850 114" fill="none" stroke="#f78166" stroke-width="2.5" stroke-linejoin="round"><animate attributeName="stroke-dasharray" values="0 2000;2000 0;2000 0" keyTimes="0;0.2;1" dur="14s" repeatCount="indefinite"/></path>
 <circle cx="60" cy="298" r="3.2" fill="#f78166"/>
 <circle cx="132" cy="298" r="3.2" fill="#f78166"/>
 <circle cx="204" cy="290" r="3.2" fill="#f78166"/>
