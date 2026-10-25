@@ -55,7 +55,7 @@ RUN test -s dist/pro/index.html && test -s dist/pro/welcome.html
 
 
 # Stage 2: Serve the built assets from nginx.
-FROM nginx:alpine@sha256:72ba65eb42c10344912a84ff42408db7d34f2feb642204570ab8fc5ffd29f1d3 AS runtime
+FROM nginx:alpine@sha256:a3554c0d0b48177b1413c26e01f695334428020d9df01243fbae3e11cfd17417 AS runtime
 
 WORKDIR /usr/share/nginx/html
 
