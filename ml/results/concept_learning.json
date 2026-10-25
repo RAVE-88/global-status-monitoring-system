@@ -1,0 +1,1187 @@
+{
+  "n_examples": 2919,
+  "n_positive": 28,
+  "label": "high_risk (risk_score >= 50)",
+  "attributes": [
+    "category",
+    "region",
+    "alert_level",
+    "sentiment_class",
+    "corroboration_class",
+    "breaking"
+  ],
+  "find_s": {
+    "category": "?",
+    "region": "?",
+    "alert_level": "high",
+    "sentiment_class": "?",
+    "corroboration_class": "?",
+    "breaking": "0"
+  },
+  "find_s_trace_first_12": [
+    {
+      "step": 0,
+      "label": "0",
+      "is_positive": false,
+      "hypothesis": {}
+    },
+    {
+      "step": 1,
+      "label": "0",
+      "is_positive": false,
+      "hypothesis": {}
+    },
+    {
+      "step": 2,
+      "label": "0",
+      "is_positive": false,
+      "hypothesis": {}
+    },
+    {
+      "step": 3,
+      "label": "0",
+      "is_positive": false,
+      "hypothesis": {}
+    },
+    {
+      "step": 4,
+      "label": "0",
+      "is_positive": false,
+      "hypothesis": {}
+    },
+    {
+      "step": 5,
+      "label": "0",
+      "is_positive": false,
+      "hypothesis": {}
+    },
+    {
+      "step": 6,
+      "label": "0",
+      "is_positive": false,
+      "hypothesis": {}
+    },
+    {
+      "step": 7,
+      "label": "0",
+      "is_positive": false,
+      "hypothesis": {}
+    },
+    {
+      "step": 8,
+      "label": "0",
+      "is_positive": false,
+      "hypothesis": {}
+    },
+    {
+      "step": 9,
+      "label": "0",
+      "is_positive": false,
+      "hypothesis": {}
+    },
+    {
+      "step": 10,
+      "label": "0",
+      "is_positive": false,
+      "hypothesis": {}
+    },
+    {
+      "step": 11,
+      "label": "1",
+      "is_positive": true,
+      "hypothesis": {
+        "category": "global",
+        "region": "Global",
+        "alert_level": "high",
+        "sentiment_class": "negative",
+        "corroboration_class": "high",
+        "breaking": "0"
+      }
+    }
+  ],
+  "candidate_elimination": {
+    "specific": [
+      {
+        "category": "?",
+        "region": "?",
+        "alert_level": "high",
+        "sentiment_class": "?",
+        "corroboration_class": "?",
+        "breaking": "0"
+      }
+    ],
+    "general": [
+      {
+        "category": "?",
+        "region": "?",
+        "alert_level": "high",
+        "sentiment_class": "?",
+        "corroboration_class": "?",
+        "breaking": "?"
+      }
+    ],
+    "version_space_size": 1,
+    "history": [
+      {
+        "step": 0,
+        "label": "0",
+        "is_positive": false,
+        "specific": [
+          {
+            "category": "\u2205",
+            "region": "\u2205",
+            "alert_level": "\u2205",
+            "sentiment_class": "\u2205",
+            "corroboration_class": "\u2205",
+            "breaking": "\u2205"
+          }
+        ],
+        "general": [
+          {
+            "category": "middle_east",
+            "region": "?",
+            "alert_level": "?",
+            "sentiment_class": "?",
+            "corroboration_class": "?",
+            "breaking": "?"
+          },
+          {
+            "category": "?",
+            "region": "Middle East",
+            "alert_level": "?",
+            "sentiment_class": "?",
+            "corroboration_class": "?",
+            "breaking": "?"
+          },
+          {
+            "category": "?",
+            "region": "?",
+            "alert_level": "high",
+            "sentiment_class": "?",
+            "corroboration_class": "?",
+            "breaking": "?"
+          },
+          {
+            "category": "?",
+            "region": "?",
+            "alert_level": "?",
+            "sentiment_class": "negative",
+            "corroboration_class": "?",
+            "breaking": "?"
+          },
+          {
+            "category": "?",
+            "region": "?",
+            "alert_level": "?",
+            "sentiment_class": "positive",
+            "corroboration_class": "?",
+            "breaking": "?"
+          },
+          {
+            "category": "?",
+            "region": "?",
+            "alert_level": "?",
+            "sentiment_class": "?",
+            "corroboration_class": "high",
+            "breaking": "?"
+          },
+          {
+            "category": "?",
+            "region": "?",
+            "alert_level": "?",
+            "sentiment_class": "?",
+            "corroboration_class": "medium",
+            "breaking": "?"
+          }
+        ],
+        "skipped": false
+      },
+      {
+        "step": 1,
+        "label": "0",
+        "is_positive": false,
+        "specific": [
+          {
+            "category": "\u2205",
+            "region": "\u2205",
+            "alert_level": "\u2205",
+            "sentiment_class": "\u2205",
+            "corroboration_class": "\u2205",
+            "breaking": "\u2205"
+          }
+        ],
+        "general": [
+          {
+            "category": "middle_east",
+            "region": "?",
+            "alert_level": "?",
+            "sentiment_class": "?",
+            "corroboration_class": "?",
+            "breaking": "?"
+          },
+          {
+            "category": "?",
+            "region": "Middle East",
+            "alert_level": "?",
+            "sentiment_class": "?",
+            "corroboration_class": "?",
+            "breaking": "?"
+          },
+          {
+            "category": "?",
+            "region": "?",
+            "alert_level": "high",
+            "sentiment_class": "?",
+            "corroboration_class": "?",
+            "breaking": "?"
+          },
+          {
+            "category": "?",
+            "region": "?",
+            "alert_level": "?",
+            "sentiment_class": "negative",
+            "corroboration_class": "?",
+            "breaking": "?"
+          },
+          {
+            "category": "?",
+            "region": "?",
+            "alert_level": "?",
+            "sentiment_class": "?",
+            "corroboration_class": "high",
+            "breaking": "?"
+          },
+          {
+            "category": "?",
+            "region": "?",
+            "alert_level": "?",
+            "sentiment_class": "?",
+            "corroboration_class": "medium",
+            "breaking": "?"
+          }
+        ],
+        "skipped": false
+      },
+      {
+        "step": 2,
+        "label": "0",
+        "is_positive": false,
+        "specific": [
+          {
+            "category": "\u2205",
+            "region": "\u2205",
+            "alert_level": "\u2205",
+            "sentiment_class": "\u2205",
+            "corroboration_class": "\u2205",
+            "breaking": "\u2205"
+          }
+        ],
+        "general": [
+          {
+            "category": "middle_east",
+            "region": "?",
+            "alert_level": "?",
+            "sentiment_class": "?",
+            "corroboration_class": "?",
+            "breaking": "?"
+          },
+          {
+            "category": "?",
+            "region": "Middle East",
+            "alert_level": "?",
+            "sentiment_class": "?",
+            "corroboration_class": "?",
+            "breaking": "?"
+          },
+          {
+            "category": "?",
+            "region": "?",
+            "alert_level": "high",
+            "sentiment_class": "?",
+            "corroboration_class": "?",
+            "breaking": "?"
+          },
+          {
+            "category": "?",
+            "region": "?",
+            "alert_level": "?",
+            "sentiment_class": "negative",
+            "corroboration_class": "?",
+            "breaking": "?"
+          },
+          {
+            "category": "?",
+            "region": "?",
+            "alert_level": "?",
+            "sentiment_class": "positive",
+            "corroboration_class": "high",
+            "breaking": "?"
+          },
+          {
+            "category": "?",
+            "region": "?",
+            "alert_level": "?",
+            "sentiment_class": "?",
+            "corroboration_class": "medium",
+            "breaking": "?"
+          }
+        ],
+        "skipped": false
+      },
+      {
+        "step": 3,
+        "label": "0",
+        "is_positive": false,
+        "specific": [
+          {
+            "category": "\u2205",
+            "region": "\u2205",
+            "alert_level": "\u2205",
+            "sentiment_class": "\u2205",
+            "corroboration_class": "\u2205",
+            "breaking": "\u2205"
+          }
+        ],
+        "general": [
+          {
+            "category": "middle_east",
+            "region": "?",
+            "alert_level": "?",
+            "sentiment_class": "?",
+            "corroboration_class": "?",
+            "breaking": "?"
+          },
+          {
+            "category": "?",
+            "region": "Middle East",
+            "alert_level": "?",
+            "sentiment_class": "?",
+            "corroboration_class": "?",
+            "breaking": "?"
+          },
+          {
+            "category": "?",
+            "region": "?",
+            "alert_level": "high",
+            "sentiment_class": "?",
+            "corroboration_class": "?",
+            "breaking": "?"
+          },
+          {
+            "category": "?",
+            "region": "?",
+            "alert_level": "?",
+            "sentiment_class": "negative",
+            "corroboration_class": "low",
+            "breaking": "?"
+          },
+          {
+            "category": "?",
+            "region": "?",
+            "alert_level": "?",
+            "sentiment_class": "positive",
+            "corroboration_class": "high",
+            "breaking": "?"
+          },
+          {
+            "category": "?",
+            "region": "?",
+            "alert_level": "?",
+            "sentiment_class": "?",
+            "corroboration_class": "medium",
+            "breaking": "?"
+          }
+        ],
+        "skipped": false
+      },
+      {
+        "step": 4,
+        "label": "0",
+        "is_positive": false,
+        "specific": [
+          {
+            "category": "\u2205",
+            "region": "\u2205",
+            "alert_level": "\u2205",
+            "sentiment_class": "\u2205",
+            "corroboration_class": "\u2205",
+            "breaking": "\u2205"
+          }
+        ],
+        "general": [
+          {
+            "category": "middle_east",
+            "region": "?",
+            "alert_level": "?",
+            "sentiment_class": "?",
+            "corroboration_class": "?",
+            "breaking": "?"
+          },
+          {
+            "category": "?",
+            "region": "Middle East",
+            "alert_level": "?",
+            "sentiment_class": "?",
+            "corroboration_class": "?",
+            "breaking": "?"
+          },
+          {
+            "category": "?",
+            "region": "?",
+            "alert_level": "high",
+            "sentiment_class": "?",
+            "corroboration_class": "?",
+            "breaking": "?"
+          },
+          {
+            "category": "?",
+            "region": "?",
+            "alert_level": "?",
+            "sentiment_class": "positive",
+            "corroboration_class": "high",
+            "breaking": "?"
+          },
+          {
+            "category": "?",
+            "region": "?",
+            "alert_level": "?",
+            "sentiment_class": "?",
+            "corroboration_class": "medium",
+            "breaking": "?"
+          }
+        ],
+        "skipped": false
+      },
+      {
+        "step": 5,
+        "label": "0",
+        "is_positive": false,
+        "specific": [
+          {
+            "category": "\u2205",
+            "region": "\u2205",
+            "alert_level": "\u2205",
+            "sentiment_class": "\u2205",
+            "corroboration_class": "\u2205",
+            "breaking": "\u2205"
+          }
+        ],
+        "general": [
+          {
+            "category": "middle_east",
+            "region": "?",
+            "alert_level": "?",
+            "sentiment_class": "?",
+            "corroboration_class": "?",
+            "breaking": "?"
+          },
+          {
+            "category": "?",
+            "region": "Middle East",
+            "alert_level": "?",
+            "sentiment_class": "?",
+            "corroboration_class": "?",
+            "breaking": "?"
+          },
+          {
+            "category": "?",
+            "region": "?",
+            "alert_level": "high",
+            "sentiment_class": "?",
+            "corroboration_class": "?",
+            "breaking": "?"
+          },
+          {
+            "category": "?",
+            "region": "?",
+            "alert_level": "?",
+            "sentiment_class": "positive",
+            "corroboration_class": "high",
+            "breaking": "?"
+          },
+          {
+            "category": "?",
+            "region": "?",
+            "alert_level": "?",
+            "sentiment_class": "negative",
+            "corroboration_class": "medium",
+            "breaking": "?"
+          },
+          {
+            "category": "?",
+            "region": "?",
+            "alert_level": "?",
+            "sentiment_class": "positive",
+            "corroboration_class": "medium",
+            "breaking": "?"
+          }
+        ],
+        "skipped": false
+      },
+      {
+        "step": 6,
+        "label": "0",
+        "is_positive": false,
+        "specific": [
+          {
+            "category": "\u2205",
+            "region": "\u2205",
+            "alert_level": "\u2205",
+            "sentiment_class": "\u2205",
+            "corroboration_class": "\u2205",
+            "breaking": "\u2205"
+          }
+        ],
+        "general": [
+          {
+            "category": "middle_east",
+            "region": "?",
+            "alert_level": "?",
+            "sentiment_class": "?",
+            "corroboration_class": "?",
+            "breaking": "?"
+          },
+          {
+            "category": "?",
+            "region": "Middle East",
+            "alert_level": "?",
+            "sentiment_class": "?",
+            "corroboration_class": "?",
+            "breaking": "?"
+          },
+          {
+            "category": "?",
+            "region": "?",
+            "alert_level": "high",
+            "sentiment_class": "?",
+            "corroboration_class": "?",
+            "breaking": "?"
+          },
+          {
+            "category": "?",
+            "region": "?",
+            "alert_level": "?",
+            "sentiment_class": "positive",
+            "corroboration_class": "high",
+            "breaking": "?"
+          },
+          {
+            "category": "?",
+            "region": "?",
+            "alert_level": "?",
+            "sentiment_class": "negative",
+            "corroboration_class": "medium",
+            "breaking": "?"
+          },
+          {
+            "category": "?",
+            "region": "?",
+            "alert_level": "?",
+            "sentiment_class": "positive",
+            "corroboration_class": "medium",
+            "breaking": "?"
+          }
+        ],
+        "skipped": false
+      },
+      {
+        "step": 7,
+        "label": "0",
+        "is_positive": false,
+        "specific": [
+          {
+            "category": "\u2205",
+            "region": "\u2205",
+            "alert_level": "\u2205",
+            "sentiment_class": "\u2205",
+            "corroboration_class": "\u2205",
+            "breaking": "\u2205"
+          }
+        ],
+        "general": [
+          {
+            "category": "middle_east",
+            "region": "?",
+            "alert_level": "?",
+            "sentiment_class": "?",
+            "corroboration_class": "?",
+            "breaking": "?"
+          },
+          {
+            "category": "?",
+            "region": "Middle East",
+            "alert_level": "?",
+            "sentiment_class": "?",
+            "corroboration_class": "?",
+            "breaking": "?"
+          },
+          {
+            "category": "?",
+            "region": "?",
+            "alert_level": "high",
+            "sentiment_class": "?",
+            "corroboration_class": "?",
+            "breaking": "?"
+          },
+          {
+            "category": "?",
+            "region": "?",
+            "alert_level": "?",
+            "sentiment_class": "positive",
+            "corroboration_class": "high",
+            "breaking": "?"
+          },
+          {
+            "category": "?",
+            "region": "?",
+            "alert_level": "?",
+            "sentiment_class": "negative",
+            "corroboration_class": "medium",
+            "breaking": "?"
+          }
+        ],
+        "skipped": false
+      },
+      {
+        "step": 8,
+        "label": "0",
+        "is_positive": false,
+        "specific": [
+          {
+            "category": "\u2205",
+            "region": "\u2205",
+            "alert_level": "\u2205",
+            "sentiment_class": "\u2205",
+            "corroboration_class": "\u2205",
+            "breaking": "\u2205"
+          }
+        ],
+        "general": [
+          {
+            "category": "middle_east",
+            "region": "?",
+            "alert_level": "?",
+            "sentiment_class": "?",
+            "corroboration_class": "?",
+            "breaking": "?"
+          },
+          {
+            "category": "?",
+            "region": "Middle East",
+            "alert_level": "?",
+            "sentiment_class": "?",
+            "corroboration_class": "?",
+            "breaking": "?"
+          },
+          {
+            "category": "?",
+            "region": "?",
+            "alert_level": "high",
+            "sentiment_class": "?",
+            "corroboration_class": "?",
+            "breaking": "?"
+          },
+          {
+            "category": "?",
+            "region": "?",
+            "alert_level": "?",
+            "sentiment_class": "positive",
+            "corroboration_class": "high",
+            "breaking": "?"
+          },
+          {
+            "category": "?",
+            "region": "?",
+            "alert_level": "?",
+            "sentiment_class": "negative",
+            "corroboration_class": "medium",
+            "breaking": "?"
+          }
+        ],
+        "skipped": false
+      },
+      {
+        "step": 9,
+        "label": "0",
+        "is_positive": false,
+        "specific": [
+          {
+            "category": "\u2205",
+            "region": "\u2205",
+            "alert_level": "\u2205",
+            "sentiment_class": "\u2205",
+            "corroboration_class": "\u2205",
+            "breaking": "\u2205"
+          }
+        ],
+        "general": [
+          {
+            "category": "middle_east",
+            "region": "?",
+            "alert_level": "?",
+            "sentiment_class": "?",
+            "corroboration_class": "?",
+            "breaking": "?"
+          },
+          {
+            "category": "?",
+            "region": "Middle East",
+            "alert_level": "?",
+            "sentiment_class": "?",
+            "corroboration_class": "?",
+            "breaking": "?"
+          },
+          {
+            "category": "?",
+            "region": "?",
+            "alert_level": "high",
+            "sentiment_class": "?",
+            "corroboration_class": "?",
+            "breaking": "?"
+          },
+          {
+            "category": "?",
+            "region": "?",
+            "alert_level": "?",
+            "sentiment_class": "positive",
+            "corroboration_class": "high",
+            "breaking": "?"
+          },
+          {
+            "category": "?",
+            "region": "?",
+            "alert_level": "?",
+            "sentiment_class": "negative",
+            "corroboration_class": "medium",
+            "breaking": "?"
+          }
+        ],
+        "skipped": false
+      },
+      {
+        "step": 10,
+        "label": "0",
+        "is_positive": false,
+        "specific": [
+          {
+            "category": "\u2205",
+            "region": "\u2205",
+            "alert_level": "\u2205",
+            "sentiment_class": "\u2205",
+            "corroboration_class": "\u2205",
+            "breaking": "\u2205"
+          }
+        ],
+        "general": [
+          {
+            "category": "middle_east",
+            "region": "?",
+            "alert_level": "?",
+            "sentiment_class": "?",
+            "corroboration_class": "?",
+            "breaking": "?"
+          },
+          {
+            "category": "?",
+            "region": "Middle East",
+            "alert_level": "?",
+            "sentiment_class": "?",
+            "corroboration_class": "?",
+            "breaking": "?"
+          },
+          {
+            "category": "?",
+            "region": "?",
+            "alert_level": "high",
+            "sentiment_class": "?",
+            "corroboration_class": "?",
+            "breaking": "?"
+          },
+          {
+            "category": "?",
+            "region": "?",
+            "alert_level": "?",
+            "sentiment_class": "positive",
+            "corroboration_class": "high",
+            "breaking": "?"
+          },
+          {
+            "category": "?",
+            "region": "?",
+            "alert_level": "?",
+            "sentiment_class": "negative",
+            "corroboration_class": "medium",
+            "breaking": "?"
+          }
+        ],
+        "skipped": false
+      },
+      {
+        "step": 11,
+        "label": "1",
+        "is_positive": true,
+        "specific": [
+          {
+            "category": "global",
+            "region": "Global",
+            "alert_level": "high",
+            "sentiment_class": "negative",
+            "corroboration_class": "high",
+            "breaking": "0"
+          }
+        ],
+        "general": [
+          {
+            "category": "?",
+            "region": "?",
+            "alert_level": "high",
+            "sentiment_class": "?",
+            "corroboration_class": "?",
+            "breaking": "?"
+          }
+        ],
+        "skipped": false
+      },
+      {
+        "step": 12,
+        "label": "0",
+        "is_positive": false,
+        "specific": [
+          {
+            "category": "global",
+            "region": "Global",
+            "alert_level": "high",
+            "sentiment_class": "negative",
+            "corroboration_class": "high",
+            "breaking": "0"
+          }
+        ],
+        "general": [
+          {
+            "category": "?",
+            "region": "?",
+            "alert_level": "high",
+            "sentiment_class": "?",
+            "corroboration_class": "?",
+            "breaking": "?"
+          }
+        ],
+        "skipped": false
+      },
+      {
+        "step": 13,
+        "label": "0",
+        "is_positive": false,
+        "specific": [
+          {
+            "category": "global",
+            "region": "Global",
+            "alert_level": "high",
+            "sentiment_class": "negative",
+            "corroboration_class": "high",
+            "breaking": "0"
+          }
+        ],
+        "general": [
+          {
+            "category": "?",
+            "region": "?",
+            "alert_level": "high",
+            "sentiment_class": "?",
+            "corroboration_class": "?",
+            "breaking": "?"
+          }
+        ],
+        "skipped": false
+      },
+      {
+        "step": 14,
+        "label": "0",
+        "is_positive": false,
+        "specific": [
+          {
+            "category": "global",
+            "region": "Global",
+            "alert_level": "high",
+            "sentiment_class": "negative",
+            "corroboration_class": "high",
+            "breaking": "0"
+          }
+        ],
+        "general": [
+          {
+            "category": "?",
+            "region": "?",
+            "alert_level": "high",
+            "sentiment_class": "?",
+            "corroboration_class": "?",
+            "breaking": "?"
+          }
+        ],
+        "skipped": false
+      },
+      {
+        "step": 15,
+        "label": "0",
+        "is_positive": false,
+        "specific": [
+          {
+            "category": "global",
+            "region": "Global",
+            "alert_level": "high",
+            "sentiment_class": "negative",
+            "corroboration_class": "high",
+            "breaking": "0"
+          }
+        ],
+        "general": [
+          {
+            "category": "?",
+            "region": "?",
+            "alert_level": "high",
+            "sentiment_class": "?",
+            "corroboration_class": "?",
+            "breaking": "?"
+          }
+        ],
+        "skipped": false
+      },
+      {
+        "step": 16,
+        "label": "0",
+        "is_positive": false,
+        "specific": [
+          {
+            "category": "global",
+            "region": "Global",
+            "alert_level": "high",
+            "sentiment_class": "negative",
+            "corroboration_class": "high",
+            "breaking": "0"
+          }
+        ],
+        "general": [
+          {
+            "category": "?",
+            "region": "?",
+            "alert_level": "high",
+            "sentiment_class": "?",
+            "corroboration_class": "?",
+            "breaking": "?"
+          }
+        ],
+        "skipped": false
+      },
+      {
+        "step": 17,
+        "label": "0",
+        "is_positive": false,
+        "specific": [
+          {
+            "category": "global",
+            "region": "Global",
+            "alert_level": "high",
+            "sentiment_class": "negative",
+            "corroboration_class": "high",
+            "breaking": "0"
+          }
+        ],
+        "general": [
+          {
+            "category": "?",
+            "region": "?",
+            "alert_level": "high",
+            "sentiment_class": "?",
+            "corroboration_class": "?",
+            "breaking": "?"
+          }
+        ],
+        "skipped": false
+      },
+      {
+        "step": 18,
+        "label": "0",
+        "is_positive": false,
+        "specific": [
+          {
+            "category": "global",
+            "region": "Global",
+            "alert_level": "high",
+            "sentiment_class": "negative",
+            "corroboration_class": "high",
+            "breaking": "0"
+          }
+        ],
+        "general": [
+          {
+            "category": "?",
+            "region": "?",
+            "alert_level": "high",
+            "sentiment_class": "?",
+            "corroboration_class": "?",
+            "breaking": "?"
+          }
+        ],
+        "skipped": false
+      },
+      {
+        "step": 19,
+        "label": "0",
+        "is_positive": false,
+        "specific": [
+          {
+            "category": "global",
+            "region": "Global",
+            "alert_level": "high",
+            "sentiment_class": "negative",
+            "corroboration_class": "high",
+            "breaking": "0"
+          }
+        ],
+        "general": [
+          {
+            "category": "?",
+            "region": "?",
+            "alert_level": "high",
+            "sentiment_class": "?",
+            "corroboration_class": "?",
+            "breaking": "?"
+          }
+        ],
+        "skipped": false
+      },
+      {
+        "step": 20,
+        "label": "0",
+        "is_positive": false,
+        "specific": [
+          {
+            "category": "global",
+            "region": "Global",
+            "alert_level": "high",
+            "sentiment_class": "negative",
+            "corroboration_class": "high",
+            "breaking": "0"
+          }
+        ],
+        "general": [
+          {
+            "category": "?",
+            "region": "?",
+            "alert_level": "high",
+            "sentiment_class": "?",
+            "corroboration_class": "?",
+            "breaking": "?"
+          }
+        ],
+        "skipped": false
+      },
+      {
+        "step": 21,
+        "label": "0",
+        "is_positive": false,
+        "specific": [
+          {
+            "category": "global",
+            "region": "Global",
+            "alert_level": "high",
+            "sentiment_class": "negative",
+            "corroboration_class": "high",
+            "breaking": "0"
+          }
+        ],
+        "general": [
+          {
+            "category": "?",
+            "region": "?",
+            "alert_level": "high",
+            "sentiment_class": "?",
+            "corroboration_class": "?",
+            "breaking": "?"
+          }
+        ],
+        "skipped": false
+      },
+      {
+        "step": 22,
+        "label": "0",
+        "is_positive": false,
+        "specific": [
+          {
+            "category": "global",
+            "region": "Global",
+            "alert_level": "high",
+            "sentiment_class": "negative",
+            "corroboration_class": "high",
+            "breaking": "0"
+          }
+        ],
+        "general": [
+          {
+            "category": "?",
+            "region": "?",
+            "alert_level": "high",
+            "sentiment_class": "?",
+            "corroboration_class": "?",
+            "breaking": "?"
+          }
+        ],
+        "skipped": false
+      },
+      {
+        "step": 23,
+        "label": "0",
+        "is_positive": false,
+        "specific": [
+          {
+            "category": "global",
+            "region": "Global",
+            "alert_level": "high",
+            "sentiment_class": "negative",
+            "corroboration_class": "high",
+            "breaking": "0"
+          }
+        ],
+        "general": [
+          {
+            "category": "?",
+            "region": "?",
+            "alert_level": "high",
+            "sentiment_class": "?",
+            "corroboration_class": "?",
+            "breaking": "?"
+          }
+        ],
+        "skipped": false
+      },
+      {
+        "step": 24,
+        "label": "0",
+        "is_positive": false,
+        "specific": [
+          {
+            "category": "global",
+            "region": "Global",
+            "alert_level": "high",
+            "sentiment_class": "negative",
+            "corroboration_class": "high",
+            "breaking": "0"
+          }
+        ],
+        "general": [
+          {
+            "category": "?",
+            "region": "?",
+            "alert_level": "high",
+            "sentiment_class": "?",
+            "corroboration_class": "?",
+            "breaking": "?"
+          }
+        ],
+        "skipped": false
+      }
+    ],
+    "notes": [],
+    "skipped_examples": 0
+  }
+}

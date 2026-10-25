@@ -1,0 +1,210 @@
+{
+  "bootstrap_accuracy": {
+    "point": 0.9779,
+    "mean": 0.9789,
+    "lo": 0.9641,
+    "hi": 0.9917,
+    "n_boot": 200,
+    "skipped_resamples": 0,
+    "seed": 42,
+    "model": "LogisticRegression"
+  },
+  "bias_variance": {
+    "model": "DecisionTreeClassifier(max_depth=d, random_state=42)",
+    "table": [
+      {
+        "depth": 1,
+        "train_accuracy": 0.9585,
+        "train_error": 0.0415,
+        "test_accuracy": 0.989,
+        "test_error": 0.011
+      },
+      {
+        "depth": 2,
+        "train_accuracy": 0.9585,
+        "train_error": 0.0415,
+        "test_accuracy": 0.989,
+        "test_error": 0.011
+      },
+      {
+        "depth": 3,
+        "train_accuracy": 0.9614,
+        "train_error": 0.0386,
+        "test_accuracy": 0.9862,
+        "test_error": 0.0138
+      },
+      {
+        "depth": 4,
+        "train_accuracy": 0.9648,
+        "train_error": 0.0352,
+        "test_accuracy": 0.9807,
+        "test_error": 0.0193
+      },
+      {
+        "depth": 5,
+        "train_accuracy": 0.9692,
+        "train_error": 0.0308,
+        "test_accuracy": 0.9834,
+        "test_error": 0.0166
+      },
+      {
+        "depth": 6,
+        "train_accuracy": 0.9751,
+        "train_error": 0.0249,
+        "test_accuracy": 0.9807,
+        "test_error": 0.0193
+      },
+      {
+        "depth": 7,
+        "train_accuracy": 0.9775,
+        "train_error": 0.0225,
+        "test_accuracy": 0.9669,
+        "test_error": 0.0331
+      },
+      {
+        "depth": 8,
+        "train_accuracy": 0.9809,
+        "train_error": 0.0191,
+        "test_accuracy": 0.9448,
+        "test_error": 0.0552
+      },
+      {
+        "depth": 9,
+        "train_accuracy": 0.9834,
+        "train_error": 0.0166,
+        "test_accuracy": 0.9448,
+        "test_error": 0.0552
+      },
+      {
+        "depth": 10,
+        "train_accuracy": 0.9868,
+        "train_error": 0.0132,
+        "test_accuracy": 0.9227,
+        "test_error": 0.0773
+      },
+      {
+        "depth": 11,
+        "train_accuracy": 0.9902,
+        "train_error": 0.0098,
+        "test_accuracy": 0.9586,
+        "test_error": 0.0414
+      },
+      {
+        "depth": 12,
+        "train_accuracy": 0.9941,
+        "train_error": 0.0059,
+        "test_accuracy": 0.9254,
+        "test_error": 0.0746
+      }
+    ],
+    "best_test_depth": 1
+  },
+  "regularization": {
+    "model": "LogisticRegression(max_iter=2000, C=c, random_state=42)",
+    "table": [
+      {
+        "C": 0.001,
+        "train_accuracy": 0.9585,
+        "test_accuracy": 0.9862,
+        "gap": -0.0277
+      },
+      {
+        "C": 0.01,
+        "train_accuracy": 0.958,
+        "test_accuracy": 0.9834,
+        "gap": -0.0254
+      },
+      {
+        "C": 0.1,
+        "train_accuracy": 0.9585,
+        "test_accuracy": 0.9862,
+        "gap": -0.0277
+      },
+      {
+        "C": 1.0,
+        "train_accuracy": 0.958,
+        "test_accuracy": 0.9862,
+        "gap": -0.0282
+      },
+      {
+        "C": 10.0,
+        "train_accuracy": 0.958,
+        "test_accuracy": 0.9862,
+        "gap": -0.0282
+      },
+      {
+        "C": 100.0,
+        "train_accuracy": 0.958,
+        "test_accuracy": 0.9862,
+        "gap": -0.0282
+      }
+    ]
+  },
+  "cross_validation_all_models": {
+    "GaussianNB": {
+      "k": 5,
+      "fold_accuracies": [
+        0.0463,
+        0.3732,
+        0.3154,
+        0.3154,
+        0.445
+      ],
+      "mean": 0.2991,
+      "std": 0.135,
+      "notes": []
+    },
+    "kNN(k=5,distance)": {
+      "k": 5,
+      "fold_accuracies": [
+        0.9561,
+        0.9537,
+        0.9487,
+        0.956,
+        0.956
+      ],
+      "mean": 0.9541,
+      "std": 0.0029,
+      "notes": []
+    },
+    "LogisticRegression": {
+      "k": 5,
+      "fold_accuracies": [
+        0.9585,
+        0.9537,
+        0.9535,
+        0.9584,
+        0.9584
+      ],
+      "mean": 0.9565,
+      "std": 0.0024,
+      "notes": []
+    },
+    "LinearSVC": {
+      "k": 5,
+      "fold_accuracies": [
+        0.9585,
+        0.9585,
+        0.956,
+        0.9584,
+        0.9584
+      ],
+      "mean": 0.958,
+      "std": 0.001,
+      "notes": []
+    },
+    "SVC(rbf)": {
+      "k": 5,
+      "fold_accuracies": [
+        0.9585,
+        0.9585,
+        0.9584,
+        0.9584,
+        0.9584
+      ],
+      "mean": 0.9585,
+      "std": 0.0,
+      "notes": []
+    }
+  }
+}

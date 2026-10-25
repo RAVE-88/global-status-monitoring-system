@@ -1,0 +1,31 @@
+{
+  "query": "Atiku asks FG to publish Nigeria - US health agreement after Ghana rejection - Latest News In Nigeria , Nigeria News Today , Your Online Nigerian Newspaper",
+  "embedding_dim": 32,
+  "neighbours": [
+    {
+      "index": 642,
+      "cosine": 1.0,
+      "headline": "Atiku asks FG to publish Nigeria - US health agreement after Ghana rejection - Latest News In Nigeria , Nigeria News Today , Your Online Nigerian Newspaper"
+    },
+    {
+      "index": 1466,
+      "cosine": 0.8095,
+      "headline": "Submit applications online for temporary crackers shop"
+    },
+    {
+      "index": 176,
+      "cosine": 0.7614,
+      "headline": "Israel - Bound Flight Diverted After Fight Breaks Out Between Pilots - Latest News In Nigeria , Nigeria News Today , Your Online Nigerian Newspaper"
+    },
+    {
+      "index": 2212,
+      "cosine": 0.7154,
+      "headline": "Nigeria cuts Ways and Means debt by \u20a6613bn in Q2  26"
+    },
+    {
+      "index": 47,
+      "cosine": 0.7055,
+      "headline": "Genocide Is Genocide : Why Palestine Matters to Nigeria"
+    }
+  ]
+}

@@ -1,0 +1,3309 @@
+{
+  "generated_utc": "2026-10-04T13:42:36.886052+00:00",
+  "score_definition": "Academic derived score for the GSMS ML laboratory: transparent weighted sum of severity(30) + event_volume(20) + negativity(15) + corroboration(10) + seismic(15) + news_velocity(10), each component clamped to [0,1]. NOT the dashboard's production CII; labels and weights are heuristics for coursework, not an operational alerting product.",
+  "bands": "0-24 Low, 25-49 Medium, 50-74 High, 75-100 Critical",
+  "window_hours": 68.25,
+  "n_events": 2919,
+  "n_quakes": 1875,
+  "global_unmatched_events": 1924,
+  "global_unmatched_quakes": 766,
+  "countries": [
+    {
+      "country": "Global",
+      "region": "Global",
+      "score": 85,
+      "band": "Critical",
+      "components": {
+        "severity": 1.0,
+        "event_volume": 1.0,
+        "negativity": 0.0025,
+        "corroboration": 1.0,
+        "seismic": 1.0,
+        "news_velocity": 1.0
+      },
+      "event_count": 1924,
+      "counts_by_category": {
+        "conflict": 13,
+        "cyber": 4,
+        "diplomatic": 51,
+        "disaster": 5,
+        "economic": 31,
+        "environmental": 5,
+        "general": 1795,
+        "health": 8,
+        "infrastructure": 1,
+        "military": 1,
+        "protest": 7,
+        "terrorism": 3
+      },
+      "level_counts": {
+        "critical": 3,
+        "high": 22,
+        "info": 1795,
+        "low": 66,
+        "medium": 38
+      },
+      "worst_level": "critical",
+      "avg_sentiment": -0.0025,
+      "max_corroboration": 52,
+      "avg_risk_score": 4.17,
+      "quake_count": 766,
+      "max_magnitude": 6.6,
+      "news_velocity_per_hour": 28.1905,
+      "top_headlines": [
+        "EAM Jaishankar holds bilateral talks with four European foreign ministers",
+        "Government urged to help all households with energy bills as 16 % hike forecast",
+        "Government urged to help all households with energy bills as 16 % hike forecast"
+      ]
+    },
+    {
+      "country": "US",
+      "region": "North America",
+      "score": 85,
+      "band": "Critical",
+      "components": {
+        "severity": 1.0,
+        "event_volume": 1.0,
+        "negativity": 0.018,
+        "corroboration": 1.0,
+        "seismic": 1.0,
+        "news_velocity": 1.0
+      },
+      "event_count": 271,
+      "counts_by_category": {
+        "conflict": 26,
+        "diplomatic": 30,
+        "economic": 6,
+        "environmental": 1,
+        "general": 206,
+        "military": 1,
+        "protest": 1
+      },
+      "level_counts": {
+        "critical": 2,
+        "high": 27,
+        "info": 206,
+        "low": 31,
+        "medium": 5
+      },
+      "worst_level": "critical",
+      "avg_sentiment": -0.018,
+      "max_corroboration": 17,
+      "avg_risk_score": 9.01,
+      "quake_count": 1017,
+      "max_magnitude": 4.15,
+      "news_velocity_per_hour": 3.9707,
+      "top_headlines": [
+        "US completes Iraq troop withdrawal , ending 12 - year mission against ISIS",
+        "Iran reviews US ceasefire counterproposal as Strait of Hormuz terms remain unclear",
+        "Iran reviews US ceasefire counterproposal as Strait of Hormuz terms remain unclear"
+      ]
+    },
+    {
+      "country": "RU",
+      "region": "Europe",
+      "score": 78,
+      "band": "Critical",
+      "components": {
+        "severity": 1.0,
+        "event_volume": 1.0,
+        "negativity": 0.3085,
+        "corroboration": 0.6,
+        "seismic": 1.0,
+        "news_velocity": 0.2711
+      },
+      "event_count": 37,
+      "counts_by_category": {
+        "conflict": 9,
+        "general": 21,
+        "health": 1,
+        "military": 6
+      },
+      "level_counts": {
+        "critical": 10,
+        "high": 5,
+        "info": 21,
+        "low": 1
+      },
+      "worst_level": "critical",
+      "avg_sentiment": -0.3085,
+      "max_corroboration": 3,
+      "avg_risk_score": 25.19,
+      "quake_count": 20,
+      "max_magnitude": 4.6,
+      "news_velocity_per_hour": 0.5421,
+      "top_headlines": [
+        "Russia posts highest crude export earnings since 2022 Bloomberg",
+        "Russia sends nuclear warning to NATO as tensions rise in the Baltic",
+        "Moscow dismisses Atlantic US - Russia swap claim"
+      ]
+    },
+    {
+      "country": "IQ",
+      "region": "Middle East",
+      "score": 74,
+      "band": "High",
+      "components": {
+        "severity": 1.0,
+        "event_volume": 1.0,
+        "negativity": 0.1489,
+        "corroboration": 1.0,
+        "seismic": 0.3812,
+        "news_velocity": 0.5568
+      },
+      "event_count": 76,
+      "counts_by_category": {
+        "conflict": 11,
+        "general": 64,
+        "military": 1
+      },
+      "level_counts": {
+        "critical": 3,
+        "high": 9,
+        "info": 64
+      },
+      "worst_level": "critical",
+      "avg_sentiment": -0.1489,
+      "max_corroboration": 17,
+      "avg_risk_score": 10.45,
+      "quake_count": 1,
+      "max_magnitude": 5.3,
+      "news_velocity_per_hour": 1.1136,
+      "top_headlines": [
+        "US completes Iraq troop withdrawal , ending 12 - year mission against ISIS",
+        "The US military says its withdrawal of troops from Iraq is complete",
+        "US forces are finally withdrawing from Iraq . But what does that mean for its future ?"
+      ]
+    },
+    {
+      "country": "IL",
+      "region": "Middle East",
+      "score": 71,
+      "band": "High",
+      "components": {
+        "severity": 1.0,
+        "event_volume": 1.0,
+        "negativity": 0.3811,
+        "corroboration": 1.0,
+        "seismic": 0.0,
+        "news_velocity": 0.4835
+      },
+      "event_count": 66,
+      "counts_by_category": {
+        "conflict": 5,
+        "diplomatic": 2,
+        "general": 54,
+        "terrorism": 5
+      },
+      "level_counts": {
+        "critical": 2,
+        "high": 8,
+        "info": 54,
+        "low": 2
+      },
+      "worst_level": "critical",
+      "avg_sentiment": -0.3811,
+      "max_corroboration": 5,
+      "avg_risk_score": 11.24,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.967,
+      "top_headlines": [
+        "What did Benjamin Netanyahu know before the October 7 massacre ?",
+        "Mounting pressure on Iran could lead to attack on Israel despite US peace talks",
+        "Why Israel is interfering in Palestinian education"
+      ]
+    },
+    {
+      "country": "IR",
+      "region": "Middle East",
+      "score": 70,
+      "band": "High",
+      "components": {
+        "severity": 1.0,
+        "event_volume": 1.0,
+        "negativity": 0.0,
+        "corroboration": 1.0,
+        "seismic": 0.0,
+        "news_velocity": 1.0
+      },
+      "event_count": 141,
+      "counts_by_category": {
+        "conflict": 30,
+        "diplomatic": 11,
+        "economic": 25,
+        "general": 75
+      },
+      "level_counts": {
+        "critical": 3,
+        "high": 52,
+        "info": 75,
+        "low": 11
+      },
+      "worst_level": "critical",
+      "avg_sentiment": 0.0077,
+      "max_corroboration": 23,
+      "avg_risk_score": 20.23,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 2.0659,
+      "top_headlines": [
+        "Iran reviews US ceasefire counterproposal as Strait of Hormuz terms remain unclear",
+        "Iran reviews US ceasefire counterproposal as Strait of Hormuz terms remain unclear",
+        "Iran reviews US ceasefire counterproposal as Strait of Hormuz terms remain unclear"
+      ]
+    },
+    {
+      "country": "IN",
+      "region": "Asia",
+      "score": 63,
+      "band": "High",
+      "components": {
+        "severity": 0.7,
+        "event_volume": 1.0,
+        "negativity": 0.0,
+        "corroboration": 1.0,
+        "seismic": 0.3312,
+        "news_velocity": 0.7033
+      },
+      "event_count": 96,
+      "counts_by_category": {
+        "conflict": 1,
+        "diplomatic": 7,
+        "general": 87,
+        "terrorism": 1
+      },
+      "level_counts": {
+        "high": 2,
+        "info": 87,
+        "low": 7
+      },
+      "worst_level": "high",
+      "avg_sentiment": 0.0857,
+      "max_corroboration": 6,
+      "avg_risk_score": 4.69,
+      "quake_count": 1,
+      "max_magnitude": 4.5,
+      "news_velocity_per_hour": 1.4066,
+      "top_headlines": [
+        "New Delhi reveals number of Indian sailors in troubled waters",
+        "Gyanesh Kumar Chor Hai : Mamata Banerjee Targets CEC At INDIA Bloc Meet Amid SIR Row",
+        "No plan to split flights between Mumbai and Navi Mumbai : Air France - KLM"
+      ]
+    },
+    {
+      "country": "UA",
+      "region": "Europe",
+      "score": 60,
+      "band": "High",
+      "components": {
+        "severity": 1.0,
+        "event_volume": 1.0,
+        "negativity": 0.3202,
+        "corroboration": 0.4,
+        "seismic": 0.0,
+        "news_velocity": 0.1685
+      },
+      "event_count": 23,
+      "counts_by_category": {
+        "conflict": 8,
+        "diplomatic": 1,
+        "general": 12,
+        "military": 2
+      },
+      "level_counts": {
+        "critical": 6,
+        "high": 4,
+        "info": 12,
+        "low": 1
+      },
+      "worst_level": "critical",
+      "avg_sentiment": -0.3202,
+      "max_corroboration": 2,
+      "avg_risk_score": 26.22,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.337,
+      "top_headlines": [
+        "Postcode Ukraine : In the shadows of war , a photographer looks for stories of solidarity",
+        "South Korea says Zelensky revealed secret POW transfer to get more support",
+        "Slovak and German Foreign Ministers Discussed Trade , NATO and Ukraine - News - R\u00e1dio RSI English"
+      ]
+    },
+    {
+      "country": "CA",
+      "region": "North America",
+      "score": 58,
+      "band": "High",
+      "components": {
+        "severity": 0.7,
+        "event_volume": 0.9333,
+        "negativity": 0.0,
+        "corroboration": 0.2,
+        "seismic": 1.0,
+        "news_velocity": 0.1026
+      },
+      "event_count": 14,
+      "counts_by_category": {
+        "conflict": 1,
+        "general": 13
+      },
+      "level_counts": {
+        "high": 1,
+        "info": 13
+      },
+      "worst_level": "high",
+      "avg_sentiment": 0.0539,
+      "max_corroboration": 1,
+      "avg_risk_score": 6.07,
+      "quake_count": 14,
+      "max_magnitude": 5.2,
+      "news_velocity_per_hour": 0.2051,
+      "top_headlines": [
+        "Canadian Stocks Poised For Gains On Oil , Metals Rally",
+        "Royal Canadian Navy to conduct underwater demolition training near Victoria in October",
+        "Mining Forum : Friedland wants to kill the SAG mill - Canadian Mining Journal"
+      ]
+    },
+    {
+      "country": "JP",
+      "region": "Asia",
+      "score": 58,
+      "band": "High",
+      "components": {
+        "severity": 0.7,
+        "event_volume": 1.0,
+        "negativity": 0.089,
+        "corroboration": 0.4,
+        "seismic": 0.6562,
+        "news_velocity": 0.1905
+      },
+      "event_count": 26,
+      "counts_by_category": {
+        "conflict": 1,
+        "general": 25
+      },
+      "level_counts": {
+        "high": 1,
+        "info": 25
+      },
+      "worst_level": "high",
+      "avg_sentiment": -0.089,
+      "max_corroboration": 2,
+      "avg_risk_score": 4.42,
+      "quake_count": 7,
+      "max_magnitude": 4.9,
+      "news_velocity_per_hour": 0.381,
+      "top_headlines": [
+        "Providing Japan with test ranges , Canberra risks becoming a target",
+        "The Toyota That Changed What Americans Expected From Japanese Cars",
+        "Japan turns to AI robots to battle labour shortage"
+      ]
+    },
+    {
+      "country": "MX",
+      "region": "North America",
+      "score": 55,
+      "band": "High",
+      "components": {
+        "severity": 0.7,
+        "event_volume": 0.6667,
+        "negativity": 0.201,
+        "corroboration": 0.2,
+        "seismic": 1.0,
+        "news_velocity": 0.0733
+      },
+      "event_count": 10,
+      "counts_by_category": {
+        "disaster": 2,
+        "general": 8
+      },
+      "level_counts": {
+        "high": 2,
+        "info": 8
+      },
+      "worst_level": "high",
+      "avg_sentiment": -0.201,
+      "max_corroboration": 1,
+      "avg_risk_score": 10.4,
+      "quake_count": 203,
+      "max_magnitude": 4.5,
+      "news_velocity_per_hour": 0.1465,
+      "top_headlines": [
+        "Masivo Silver Corp .: Masivo Silver Reports Broad Polymetallic Mineralization from Initial 2026 Drilling Program at Cerro Colorado Project , Sonora , Mexico",
+        "Mexico Counterfeit Medicines Alert : The Lots to Avoid",
+        "Mexican Drug Makers Say State Owes Them US$335 Million"
+      ]
+    },
+    {
+      "country": "NG",
+      "region": "Africa",
+      "score": 54,
+      "band": "High",
+      "components": {
+        "severity": 1.0,
+        "event_volume": 1.0,
+        "negativity": 0.0329,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.1465
+      },
+      "event_count": 20,
+      "counts_by_category": {
+        "conflict": 1,
+        "diplomatic": 2,
+        "general": 17
+      },
+      "level_counts": {
+        "critical": 1,
+        "info": 17,
+        "low": 2
+      },
+      "worst_level": "critical",
+      "avg_sentiment": -0.0329,
+      "max_corroboration": 1,
+      "avg_risk_score": 6.35,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.293,
+      "top_headlines": [
+        "Genocide Is Genocide : Why Palestine Matters to Nigeria",
+        "Pilots in knife fight as Israel - bound flight lands in Saudi Arabia \u2013 The Sun Nigeria",
+        "Israel - Bound Flight Diverted After Fight Breaks Out Between Pilots - Latest News In Nigeria , Nigeria News Today , Your Online Nigerian Newspaper"
+      ]
+    },
+    {
+      "country": "CN",
+      "region": "Asia",
+      "score": 53,
+      "band": "High",
+      "components": {
+        "severity": 0.4,
+        "event_volume": 1.0,
+        "negativity": 0.0,
+        "corroboration": 0.4,
+        "seismic": 0.9,
+        "news_velocity": 0.3516
+      },
+      "event_count": 48,
+      "counts_by_category": {
+        "diplomatic": 3,
+        "economic": 1,
+        "general": 44
+      },
+      "level_counts": {
+        "info": 44,
+        "low": 3,
+        "medium": 1
+      },
+      "worst_level": "medium",
+      "avg_sentiment": 0.0997,
+      "max_corroboration": 2,
+      "avg_risk_score": 4.27,
+      "quake_count": 11,
+      "max_magnitude": 5.6,
+      "news_velocity_per_hour": 0.7033,
+      "top_headlines": [
+        "China Focus : Scholars explore how Confucian wisdom illuminates challenges in AI age",
+        "Peace in Middle East : China optimistic US , Iran will recommit themselves to Islamabad MoU",
+        "Republican chair warns Trump over South Korea China ties"
+      ]
+    },
+    {
+      "country": "DE",
+      "region": "Europe",
+      "score": 51,
+      "band": "High",
+      "components": {
+        "severity": 0.7,
+        "event_volume": 1.0,
+        "negativity": 0.0,
+        "corroboration": 0.4,
+        "seismic": 0.2687,
+        "news_velocity": 0.1832
+      },
+      "event_count": 25,
+      "counts_by_category": {
+        "conflict": 1,
+        "diplomatic": 2,
+        "general": 22
+      },
+      "level_counts": {
+        "high": 1,
+        "info": 22,
+        "low": 2
+      },
+      "worst_level": "high",
+      "avg_sentiment": 0.1838,
+      "max_corroboration": 2,
+      "avg_risk_score": 5.08,
+      "quake_count": 1,
+      "max_magnitude": 3.5,
+      "news_velocity_per_hour": 0.3663,
+      "top_headlines": [
+        "Eating My Way Along the Midwest German Trail",
+        "Germany Orders Winter Gas Reserves Boost as Mideast War Worries Mount",
+        "Slovak and German Foreign Ministers Discussed Trade , NATO and Ukraine - News - R\u00e1dio RSI English"
+      ]
+    },
+    {
+      "country": "GB",
+      "region": "Europe",
+      "score": 50,
+      "band": "High",
+      "components": {
+        "severity": 0.4,
+        "event_volume": 1.0,
+        "negativity": 0.2078,
+        "corroboration": 1.0,
+        "seismic": 0.0,
+        "news_velocity": 0.4982
+      },
+      "event_count": 68,
+      "counts_by_category": {
+        "disaster": 1,
+        "general": 67
+      },
+      "level_counts": {
+        "info": 67,
+        "medium": 1
+      },
+      "worst_level": "medium",
+      "avg_sentiment": -0.2078,
+      "max_corroboration": 24,
+      "avg_risk_score": 3.75,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.9963,
+      "top_headlines": [
+        "Government urged to help all households with energy bills as 16 % hike forecast | East London and West Essex Guardian Series",
+        "UK economy grows faster than first thought amid service sector boost",
+        "Families face \u00a32 , 000 energy bills as Britain reliance on imports comes under fire - NATIONAL NEWS"
+      ]
+    },
+    {
+      "country": "PS",
+      "region": "Middle East",
+      "score": 50,
+      "band": "High",
+      "components": {
+        "severity": 1.0,
+        "event_volume": 0.4667,
+        "negativity": 0.546,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.0513
+      },
+      "event_count": 7,
+      "counts_by_category": {
+        "conflict": 2,
+        "general": 4,
+        "terrorism": 1
+      },
+      "level_counts": {
+        "critical": 1,
+        "high": 2,
+        "info": 4
+      },
+      "worst_level": "critical",
+      "avg_sentiment": -0.546,
+      "max_corroboration": 1,
+      "avg_risk_score": 23.43,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.1026,
+      "top_headlines": [
+        "Gaza Transition Must Lead to Palestinian Statehood , Liberia Says | News",
+        "Arab News | BBC releases new Gaza documentary after past controversies",
+        "Terrorist attack  by Israeli settlers on Palestinian family in West Bank condemned"
+      ]
+    },
+    {
+      "country": "MM",
+      "region": "Asia",
+      "score": 48,
+      "band": "Medium",
+      "components": {
+        "severity": 1.0,
+        "event_volume": 0.4,
+        "negativity": 0.2415,
+        "corroboration": 0.6,
+        "seismic": 0.0,
+        "news_velocity": 0.044
+      },
+      "event_count": 6,
+      "counts_by_category": {
+        "conflict": 1,
+        "general": 5
+      },
+      "level_counts": {
+        "critical": 1,
+        "info": 5
+      },
+      "worst_level": "critical",
+      "avg_sentiment": -0.2415,
+      "max_corroboration": 3,
+      "avg_risk_score": 14.0,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.0879,
+      "top_headlines": [
+        "Malaysia begins Myanmar repatriations despite safety warnings by UN and rights groups",
+        "Malaysia begins Myanmar repatriations despite safety warnings by UN and rights groups",
+        "Malaysia begins Myanmar repatriations despite safety warnings by UN and rights groups"
+      ]
+    },
+    {
+      "country": "BR",
+      "region": "South America",
+      "score": 46,
+      "band": "Medium",
+      "components": {
+        "severity": 0.4,
+        "event_volume": 0.9333,
+        "negativity": 0.0544,
+        "corroboration": 0.4,
+        "seismic": 0.625,
+        "news_velocity": 0.1026
+      },
+      "event_count": 14,
+      "counts_by_category": {
+        "diplomatic": 2,
+        "economic": 1,
+        "general": 11
+      },
+      "level_counts": {
+        "info": 11,
+        "low": 2,
+        "medium": 1
+      },
+      "worst_level": "medium",
+      "avg_sentiment": -0.0544,
+      "max_corroboration": 2,
+      "avg_risk_score": 4.64,
+      "quake_count": 6,
+      "max_magnitude": 5.2,
+      "news_velocity_per_hour": 0.2051,
+      "top_headlines": [
+        "Pl\u00ednio Trump , Mick Jagger and Samurai Taxi Driver keep Brazil tradition of joke candidates alive",
+        "Pl\u00ednio Trump , Mick Jagger and Samurai Taxi Driver keep Brazil tradition of joke candidates alive",
+        "AI Predicts XRP Path as Brazil Puts Securities Onchain"
+      ]
+    },
+    {
+      "country": "RO",
+      "region": "Europe",
+      "score": 46,
+      "band": "Medium",
+      "components": {
+        "severity": 1.0,
+        "event_volume": 0.6667,
+        "negativity": 0.0,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.0733
+      },
+      "event_count": 10,
+      "counts_by_category": {
+        "conflict": 1,
+        "general": 9
+      },
+      "level_counts": {
+        "critical": 1,
+        "info": 9
+      },
+      "worst_level": "critical",
+      "avg_sentiment": 0.1061,
+      "max_corroboration": 1,
+      "avg_risk_score": 8.6,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.1465,
+      "top_headlines": [
+        "CORONAT MASK 2026 - Radio Romania International",
+        "Russian strikes kill 3 in Kyiv , prompt NATO to scramble aircraft in Poland , Romania",
+        "ANC head : Romania has national AI hub funded with EUR 60 mln in structural funds"
+      ]
+    },
+    {
+      "country": "ES",
+      "region": "Europe",
+      "score": 43,
+      "band": "Medium",
+      "components": {
+        "severity": 1.0,
+        "event_volume": 0.2,
+        "negativity": 0.1885,
+        "corroboration": 0.2,
+        "seismic": 0.2313,
+        "news_velocity": 0.022
+      },
+      "event_count": 3,
+      "counts_by_category": {
+        "conflict": 1,
+        "general": 1,
+        "protest": 1
+      },
+      "level_counts": {
+        "critical": 1,
+        "info": 1,
+        "medium": 1
+      },
+      "worst_level": "critical",
+      "avg_sentiment": -0.1885,
+      "max_corroboration": 1,
+      "avg_risk_score": 29.0,
+      "quake_count": 1,
+      "max_magnitude": 2.9,
+      "news_velocity_per_hour": 0.044,
+      "top_headlines": [
+        "What to know about Spain housing protests sparked by the eviction of the 87 - year - old Maricarmen \u2013 Winnipeg Free Press",
+        "Spanish King Felipe VI Admonishes Migrant Invasion of Ceuta as  Unacceptable",
+        "What went wrong during a TikToker first au pair job in Spain ?"
+      ]
+    },
+    {
+      "country": "IT",
+      "region": "Europe",
+      "score": 42,
+      "band": "Medium",
+      "components": {
+        "severity": 1.0,
+        "event_volume": 0.3333,
+        "negativity": 0.1943,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.0366
+      },
+      "event_count": 5,
+      "counts_by_category": {
+        "conflict": 1,
+        "general": 4
+      },
+      "level_counts": {
+        "critical": 1,
+        "info": 4
+      },
+      "worst_level": "critical",
+      "avg_sentiment": -0.1943,
+      "max_corroboration": 1,
+      "avg_risk_score": 14.4,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.0733,
+      "top_headlines": [
+        "Americans in Italy : Tax on 401ks and the country  Americanization",
+        "Priests call on Church to recognise Gaza  genocide  at Rome protest",
+        "Italian Senator Giulio Terzi : Change of Regime in Iran Can No Longer Be Delayed"
+      ]
+    },
+    {
+      "country": "FR",
+      "region": "Europe",
+      "score": 40,
+      "band": "Medium",
+      "components": {
+        "severity": 0.7,
+        "event_volume": 0.8,
+        "negativity": 0.0068,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.0879
+      },
+      "event_count": 12,
+      "counts_by_category": {
+        "general": 10,
+        "military": 1,
+        "protest": 1
+      },
+      "level_counts": {
+        "high": 1,
+        "info": 10,
+        "medium": 1
+      },
+      "worst_level": "high",
+      "avg_sentiment": -0.0068,
+      "max_corroboration": 1,
+      "avg_risk_score": 7.67,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.1758,
+      "top_headlines": [
+        "No plan to split flights between Mumbai and Navi Mumbai : Air France - KLM",
+        "Macron faces pushback over plan to send soldiers and defence systems to Saudi Arabia",
+        "Arab News | France says Kingdom  can count on  Paris as troops deployed to protect Yanbu"
+      ]
+    },
+    {
+      "country": "LB",
+      "region": "Middle East",
+      "score": 39,
+      "band": "Medium",
+      "components": {
+        "severity": 0.7,
+        "event_volume": 0.0667,
+        "negativity": 0.9655,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.0073
+      },
+      "event_count": 1,
+      "counts_by_category": {
+        "conflict": 1
+      },
+      "level_counts": {
+        "high": 1
+      },
+      "worst_level": "high",
+      "avg_sentiment": -0.9655,
+      "max_corroboration": 1,
+      "avg_risk_score": 44.0,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.0147,
+      "top_headlines": [
+        "What Israel Lebanon War and West Bank Violence Mean for Oil Prices : Key Takeaways"
+      ]
+    },
+    {
+      "country": "PL",
+      "region": "Europe",
+      "score": 39,
+      "band": "Medium",
+      "components": {
+        "severity": 1.0,
+        "event_volume": 0.3333,
+        "negativity": 0.0,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.0366
+      },
+      "event_count": 5,
+      "counts_by_category": {
+        "conflict": 1,
+        "general": 4
+      },
+      "level_counts": {
+        "critical": 1,
+        "info": 4
+      },
+      "worst_level": "critical",
+      "avg_sentiment": 0.0294,
+      "max_corroboration": 1,
+      "avg_risk_score": 14.4,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.0733,
+      "top_headlines": [
+        "US plans permanent military base in Poland , Defence Minister says",
+        "Sweden contributes fighter jets to NATO mission in Poland again",
+        "Russian strikes kill 3 in Kyiv , prompt NATO to scramble aircraft in Poland , Romania"
+      ]
+    },
+    {
+      "country": "ML",
+      "region": "Africa",
+      "score": 38,
+      "band": "Medium",
+      "components": {
+        "severity": 0.7,
+        "event_volume": 0.0667,
+        "negativity": 0.9051,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.0073
+      },
+      "event_count": 1,
+      "counts_by_category": {
+        "conflict": 1
+      },
+      "level_counts": {
+        "high": 1
+      },
+      "worst_level": "high",
+      "avg_sentiment": -0.9051,
+      "max_corroboration": 1,
+      "avg_risk_score": 44.0,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.0147,
+      "top_headlines": [
+        "Amnesty Report Finds War Crimes in Mali by Army and Wagner"
+      ]
+    },
+    {
+      "country": "NL",
+      "region": "Europe",
+      "score": 38,
+      "band": "Medium",
+      "components": {
+        "severity": 0.05,
+        "event_volume": 1.0,
+        "negativity": 0.3677,
+        "corroboration": 1.0,
+        "seismic": 0.0,
+        "news_velocity": 0.1099
+      },
+      "event_count": 15,
+      "counts_by_category": {
+        "general": 15
+      },
+      "level_counts": {
+        "info": 15
+      },
+      "worst_level": "info",
+      "avg_sentiment": -0.3677,
+      "max_corroboration": 7,
+      "avg_risk_score": 4.73,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.2198,
+      "top_headlines": [
+        "UK offers nuclear umbrella to Baltic states , Nordic countries , and the Netherlands",
+        "FBI Warns ShinyHunters After Dutch Police Arrest Suspected Leader \u2013 Tickle The Wire",
+        "Dutch police arrest suspected member of ShinyHunters , hacking group that claimed to breach FBI jobs site"
+      ]
+    },
+    {
+      "country": "SA",
+      "region": "Middle East",
+      "score": 37,
+      "band": "Medium",
+      "components": {
+        "severity": 0.15,
+        "event_volume": 1.0,
+        "negativity": 0.1366,
+        "corroboration": 0.8,
+        "seismic": 0.0,
+        "news_velocity": 0.2564
+      },
+      "event_count": 35,
+      "counts_by_category": {
+        "diplomatic": 1,
+        "general": 34
+      },
+      "level_counts": {
+        "info": 34,
+        "low": 1
+      },
+      "worst_level": "low",
+      "avg_sentiment": -0.1366,
+      "max_corroboration": 4,
+      "avg_risk_score": 3.89,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.5128,
+      "top_headlines": [
+        "Brent crude oil price today : Why are oil prices rising as Saudi exports recover ?",
+        "Pilots in knife fight as Israel - bound flight lands in Saudi Arabia \u2013 The Sun Nigeria",
+        "Macron faces pushback over plan to send soldiers and defence systems to Saudi Arabia"
+      ]
+    },
+    {
+      "country": "CU",
+      "region": "Global",
+      "score": 35,
+      "band": "Medium",
+      "components": {
+        "severity": 0.7,
+        "event_volume": 0.4667,
+        "negativity": 0.132,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.0513
+      },
+      "event_count": 7,
+      "counts_by_category": {
+        "general": 6,
+        "military": 1
+      },
+      "level_counts": {
+        "high": 1,
+        "info": 6
+      },
+      "worst_level": "high",
+      "avg_sentiment": -0.132,
+      "max_corroboration": 1,
+      "avg_risk_score": 8.0,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.1026,
+      "top_headlines": [
+        "Rubio Urges Cuba to Choose Different Path or Face Consequences",
+        "Grenada raises concern over Cuba situation at UN General Assembly",
+        "Posit Science : Pentagon Pivots on Havana Syndrome with Re - Branding , Compensation , and a New Study"
+      ]
+    },
+    {
+      "country": "DO",
+      "region": "Global",
+      "score": 33,
+      "band": "Medium",
+      "components": {
+        "severity": 0.7,
+        "event_volume": 0.2,
+        "negativity": 0.4015,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.022
+      },
+      "event_count": 3,
+      "counts_by_category": {
+        "conflict": 2,
+        "diplomatic": 1
+      },
+      "level_counts": {
+        "high": 2,
+        "low": 1
+      },
+      "worst_level": "high",
+      "avg_sentiment": -0.4015,
+      "max_corroboration": 1,
+      "avg_risk_score": 32.33,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.044,
+      "top_headlines": [
+        "Economic war : Is Iran losing its leverage over the Strait of Hormuz ? - Dominican Republic Post \u2013 Caribbean News , Business , Travel & Culture",
+        "Russian attacks on Ukraine Kyiv region kill four , target power grid - Dominican Republic Post \u2013 Caribbean News , Business , Travel & Culture",
+        "Rubio , Saudi Arabia foreign minister hold talks on Yemen , Hormuz Strait - Dominican Republic Post \u2013 Caribbean News , Business , Travel & Culture"
+      ]
+    },
+    {
+      "country": "KR",
+      "region": "Asia",
+      "score": 33,
+      "band": "Medium",
+      "components": {
+        "severity": 0.7,
+        "event_volume": 0.4,
+        "negativity": 0.0,
+        "corroboration": 0.4,
+        "seismic": 0.0,
+        "news_velocity": 0.044
+      },
+      "event_count": 6,
+      "counts_by_category": {
+        "conflict": 1,
+        "general": 5
+      },
+      "level_counts": {
+        "high": 1,
+        "info": 5
+      },
+      "worst_level": "high",
+      "avg_sentiment": 0.1906,
+      "max_corroboration": 2,
+      "avg_risk_score": 11.83,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.0879,
+      "top_headlines": [
+        "Republican chair warns Trump over South Korea China ties",
+        "South Korea says Zelensky revealed secret POW transfer to get more support",
+        "Artificial intelligence , a key area of cooperation between Romania and South Korea ( ambassador )"
+      ]
+    },
+    {
+      "country": "QA",
+      "region": "Middle East",
+      "score": 33,
+      "band": "Medium",
+      "components": {
+        "severity": 0.7,
+        "event_volume": 0.4667,
+        "negativity": 0.0,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.0513
+      },
+      "event_count": 7,
+      "counts_by_category": {
+        "conflict": 1,
+        "diplomatic": 1,
+        "general": 5
+      },
+      "level_counts": {
+        "high": 1,
+        "info": 5,
+        "low": 1
+      },
+      "worst_level": "high",
+      "avg_sentiment": 0.0665,
+      "max_corroboration": 1,
+      "avg_risk_score": 10.14,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.1026,
+      "top_headlines": [
+        "Qatar determined to remain active in mediation : Prime Minister",
+        "Middle East Council on Global Affairs , French Institute in Qatar sign MoU to expand cooperation in research",
+        "US - Iran talks stall ; Qatar mediation fails to break deadlock"
+      ]
+    },
+    {
+      "country": "VN",
+      "region": "Asia",
+      "score": 32,
+      "band": "Medium",
+      "components": {
+        "severity": 0.7,
+        "event_volume": 0.2,
+        "negativity": 0.3017,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.022
+      },
+      "event_count": 3,
+      "counts_by_category": {
+        "conflict": 1,
+        "general": 2
+      },
+      "level_counts": {
+        "high": 1,
+        "info": 2
+      },
+      "worst_level": "high",
+      "avg_sentiment": -0.3017,
+      "max_corroboration": 1,
+      "avg_risk_score": 16.0,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.044,
+      "top_headlines": [
+        "Vietnam Decree 342 : Trading and Retail Licence Rules",
+        "Two Indian Yoga Teachers Killed In Vietnam Accident",
+        "Vietnam BW Industrial eyes IPO in 2027 : sources"
+      ]
+    },
+    {
+      "country": "NP",
+      "region": "Asia",
+      "score": 27,
+      "band": "Medium",
+      "components": {
+        "severity": 0.4,
+        "event_volume": 0.0667,
+        "negativity": 0.7616,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.0073
+      },
+      "event_count": 1,
+      "counts_by_category": {
+        "disaster": 1
+      },
+      "level_counts": {
+        "medium": 1
+      },
+      "worst_level": "medium",
+      "avg_sentiment": -0.7616,
+      "max_corroboration": 1,
+      "avg_risk_score": 23.0,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.0147,
+      "top_headlines": [
+        "Charity appeal sends solar equipment to flood - affected Nepal"
+      ]
+    },
+    {
+      "country": "ID",
+      "region": "Asia",
+      "score": 26,
+      "band": "Medium",
+      "components": {
+        "severity": 0.05,
+        "event_volume": 0.2667,
+        "negativity": 0.1155,
+        "corroboration": 0.2,
+        "seismic": 1.0,
+        "news_velocity": 0.0293
+      },
+      "event_count": 4,
+      "counts_by_category": {
+        "general": 4
+      },
+      "level_counts": {
+        "info": 4
+      },
+      "worst_level": "info",
+      "avg_sentiment": -0.1155,
+      "max_corroboration": 1,
+      "avg_risk_score": 4.0,
+      "quake_count": 14,
+      "max_magnitude": 5.0,
+      "news_velocity_per_hour": 0.0586,
+      "top_headlines": [
+        "Indonesia Envoy Hails Decades of Bahrain Ties , Backs Kingdom Amid Regional Tensions",
+        "Indonesia , Romania to expand cooperation in green energy and culture",
+        "Sustainable Transition : Advancing a Managed Path to Domestic Financing in Indonesia"
+      ]
+    },
+    {
+      "country": "TD",
+      "region": "Africa",
+      "score": 26,
+      "band": "Medium",
+      "components": {
+        "severity": 0.05,
+        "event_volume": 0.6667,
+        "negativity": 0.0,
+        "corroboration": 1.0,
+        "seismic": 0.0,
+        "news_velocity": 0.0733
+      },
+      "event_count": 10,
+      "counts_by_category": {
+        "general": 10
+      },
+      "level_counts": {
+        "info": 10
+      },
+      "worst_level": "info",
+      "avg_sentiment": 0.0462,
+      "max_corroboration": 5,
+      "avg_risk_score": 3.0,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.1465,
+      "top_headlines": [
+        "Fiona Harper Lowe , Daughter of Chad Lowe , Dies at Age 13",
+        "Chad Lowe , Kim Painter Daughter Fiona Dies At 13",
+        "Chad Lowe , Kim Painter Daughter Fiona Dies At 13"
+      ]
+    },
+    {
+      "country": "ZA",
+      "region": "Africa",
+      "score": 26,
+      "band": "Medium",
+      "components": {
+        "severity": 0.05,
+        "event_volume": 1.0,
+        "negativity": 0.0,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.2198
+      },
+      "event_count": 30,
+      "counts_by_category": {
+        "general": 30
+      },
+      "level_counts": {
+        "info": 30
+      },
+      "worst_level": "info",
+      "avg_sentiment": 0.0704,
+      "max_corroboration": 1,
+      "avg_risk_score": 2.7,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.4396,
+      "top_headlines": [
+        "How Mastercard is positioning SMEs to power South Africa economic future",
+        "South Africa infrastructure delivery gap under the spotlight",
+        "South Africa : U . S .- South Africa Rift - Separating the Optics From the Substance"
+      ]
+    },
+    {
+      "country": "CL",
+      "region": "South America",
+      "score": 25,
+      "band": "Medium",
+      "components": {
+        "severity": 0.05,
+        "event_volume": 0.4667,
+        "negativity": 0.0,
+        "corroboration": 0.2,
+        "seismic": 0.775,
+        "news_velocity": 0.0513
+      },
+      "event_count": 7,
+      "counts_by_category": {
+        "general": 7
+      },
+      "level_counts": {
+        "info": 7
+      },
+      "worst_level": "info",
+      "avg_sentiment": 0.0,
+      "max_corroboration": 1,
+      "avg_risk_score": 2.0,
+      "quake_count": 9,
+      "max_magnitude": 5.2,
+      "news_velocity_per_hour": 0.1026,
+      "top_headlines": [
+        "Gabriel Santiago | Polygon . com",
+        "Chile Accuses Israel Ambassador of Meddling in Bachelet Row",
+        "Chile Court Suspends US$45 Million Police Telecom Contract"
+      ]
+    },
+    {
+      "country": "AZ",
+      "region": "Asia",
+      "score": 24,
+      "band": "Low",
+      "components": {
+        "severity": 0.4,
+        "event_volume": 0.4667,
+        "negativity": 0.0,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.0513
+      },
+      "event_count": 7,
+      "counts_by_category": {
+        "general": 6,
+        "military": 1
+      },
+      "level_counts": {
+        "info": 6,
+        "medium": 1
+      },
+      "worst_level": "medium",
+      "avg_sentiment": 0.4387,
+      "max_corroboration": 1,
+      "avg_risk_score": 6.29,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.1026,
+      "top_headlines": [
+        "Power of Unity \u2013 2026  joint military exercise continues in Azerbaijan [ PHOTOS / VIDEO ]",
+        "Azerbaijan , Uzbekistan sign new roadmap for military cooperation",
+        "Azerbaijan Qartal UAV demonstrated for first time"
+      ]
+    },
+    {
+      "country": "CO",
+      "region": "South America",
+      "score": 24,
+      "band": "Low",
+      "components": {
+        "severity": 0.05,
+        "event_volume": 0.3333,
+        "negativity": 0.0924,
+        "corroboration": 0.2,
+        "seismic": 0.7875,
+        "news_velocity": 0.0366
+      },
+      "event_count": 5,
+      "counts_by_category": {
+        "general": 5
+      },
+      "level_counts": {
+        "info": 5
+      },
+      "worst_level": "info",
+      "avg_sentiment": -0.0924,
+      "max_corroboration": 1,
+      "avg_risk_score": 2.4,
+      "quake_count": 10,
+      "max_magnitude": 4.6,
+      "news_velocity_per_hour": 0.0733,
+      "top_headlines": [
+        "Colombia Central Bank Seen Holding 12 % as Peso Slides",
+        "Chile and Colombia medal in South American Games men volleyball with Empowerment \u2013 FIVB",
+        "COLCAP Slips 0 . 33 % as Colombia Peso Weakens"
+      ]
+    },
+    {
+      "country": "VE",
+      "region": "South America",
+      "score": 24,
+      "band": "Low",
+      "components": {
+        "severity": 0.4,
+        "event_volume": 0.2667,
+        "negativity": 0.0,
+        "corroboration": 0.2,
+        "seismic": 0.3187,
+        "news_velocity": 0.0293
+      },
+      "event_count": 4,
+      "counts_by_category": {
+        "general": 3,
+        "protest": 1
+      },
+      "level_counts": {
+        "info": 3,
+        "medium": 1
+      },
+      "worst_level": "medium",
+      "avg_sentiment": 0.0,
+      "max_corroboration": 1,
+      "avg_risk_score": 7.5,
+      "quake_count": 1,
+      "max_magnitude": 4.3,
+      "news_velocity_per_hour": 0.0586,
+      "top_headlines": [
+        "Tag : nicol _ s _ maduro",
+        "Venezuela Protesters Demand Inquiry Into Political Judges",
+        "US adds methanol to Venezuela trade licences"
+      ]
+    },
+    {
+      "country": "AE",
+      "region": "Middle East",
+      "score": 23,
+      "band": "Low",
+      "components": {
+        "severity": 0.05,
+        "event_volume": 0.9333,
+        "negativity": 0.0,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.1026
+      },
+      "event_count": 14,
+      "counts_by_category": {
+        "general": 14
+      },
+      "level_counts": {
+        "info": 14
+      },
+      "worst_level": "info",
+      "avg_sentiment": 0.0257,
+      "max_corroboration": 1,
+      "avg_risk_score": 2.93,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.2051,
+      "top_headlines": [
+        "Azerbaijan and UAE discuss advancement of military - technical cooperation",
+        "Flight from Dubai to Tel Aviv diverted after bloody altercation onboard \u2013 NBC4 Washington",
+        "Dubai Government Human Resources Department Supports Emirati Talent Journey From Skills Development To Career Opportunities At Ruya 2026 # Dubai"
+      ]
+    },
+    {
+      "country": "BO",
+      "region": "South America",
+      "score": 23,
+      "band": "Low",
+      "components": {
+        "severity": 0.4,
+        "event_volume": 0.1333,
+        "negativity": 0.393,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.0147
+      },
+      "event_count": 2,
+      "counts_by_category": {
+        "general": 1,
+        "protest": 1
+      },
+      "level_counts": {
+        "info": 1,
+        "medium": 1
+      },
+      "worst_level": "medium",
+      "avg_sentiment": -0.393,
+      "max_corroboration": 1,
+      "avg_risk_score": 12.5,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.0293,
+      "top_headlines": [
+        "Bolivia President Pressed on the Cost of His US Trip",
+        "Bolivia armed forces ready to act if protests threaten constitutional order : commander"
+      ]
+    },
+    {
+      "country": "ET",
+      "region": "Africa",
+      "score": 23,
+      "band": "Low",
+      "components": {
+        "severity": 0.4,
+        "event_volume": 0.2667,
+        "negativity": 0.2004,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.0293
+      },
+      "event_count": 4,
+      "counts_by_category": {
+        "disaster": 1,
+        "general": 3
+      },
+      "level_counts": {
+        "info": 3,
+        "medium": 1
+      },
+      "worst_level": "medium",
+      "avg_sentiment": -0.2004,
+      "max_corroboration": 1,
+      "avg_risk_score": 7.25,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.0586,
+      "top_headlines": [
+        "Lamu Refinery to Expand Ethiopia Fuel Supply Options and Strengthen Regional Trade , PM Abiy Says",
+        "Egypt seeks greater share of Nile water amid rising tension with Ethiopia",
+        "3 Indians Going to US Kidnapped in Ethiopia"
+      ]
+    },
+    {
+      "country": "PK",
+      "region": "Asia",
+      "score": 22,
+      "band": "Low",
+      "components": {
+        "severity": 0.05,
+        "event_volume": 0.6667,
+        "negativity": 0.0,
+        "corroboration": 0.2,
+        "seismic": 0.3125,
+        "news_velocity": 0.0733
+      },
+      "event_count": 10,
+      "counts_by_category": {
+        "general": 10
+      },
+      "level_counts": {
+        "info": 10
+      },
+      "worst_level": "info",
+      "avg_sentiment": 0.0644,
+      "max_corroboration": 1,
+      "avg_risk_score": 2.9,
+      "quake_count": 1,
+      "max_magnitude": 4.2,
+      "news_velocity_per_hour": 0.1465,
+      "top_headlines": [
+        "Peace in Middle East : China optimistic US , Iran will recommit themselves to Islamabad MoU",
+        "Is Pakistan opening LNG Imports to Private Companies amid Supply Disruptions ?",
+        "Pakistan Defence Minister Tells Afghan Journalist :  You Are Not a Good Neighbour"
+      ]
+    },
+    {
+      "country": "AR",
+      "region": "South America",
+      "score": 21,
+      "band": "Low",
+      "components": {
+        "severity": 0.05,
+        "event_volume": 0.3333,
+        "negativity": 0.0,
+        "corroboration": 0.2,
+        "seismic": 0.725,
+        "news_velocity": 0.0366
+      },
+      "event_count": 5,
+      "counts_by_category": {
+        "general": 5
+      },
+      "level_counts": {
+        "info": 5
+      },
+      "worst_level": "info",
+      "avg_sentiment": 0.1848,
+      "max_corroboration": 1,
+      "avg_risk_score": 2.8,
+      "quake_count": 8,
+      "max_magnitude": 5.2,
+      "news_velocity_per_hour": 0.0733,
+      "top_headlines": [
+        "Argentina turns up the economic pressure on the Falklands",
+        "Argentina Plans to Cut Shop Card Costs",
+        "Jesse & Joy Buenos Aires : Movistar Arena , 1 November 2026"
+      ]
+    },
+    {
+      "country": "ZM",
+      "region": "Africa",
+      "score": 21,
+      "band": "Low",
+      "components": {
+        "severity": 0.4,
+        "event_volume": 0.2,
+        "negativity": 0.154,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.022
+      },
+      "event_count": 3,
+      "counts_by_category": {
+        "economic": 1,
+        "general": 2
+      },
+      "level_counts": {
+        "info": 2,
+        "medium": 1
+      },
+      "worst_level": "medium",
+      "avg_sentiment": -0.154,
+      "max_corroboration": 1,
+      "avg_risk_score": 8.67,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.044,
+      "top_headlines": [
+        "Zambia Presses Copper Miners on Local Content Law",
+        "Avocado Mining smuggling : Zambia court convicts copper firm",
+        "Zambia makes huge rate cut , says inflation comfortably on target"
+      ]
+    },
+    {
+      "country": "HT",
+      "region": "Global",
+      "score": 20,
+      "band": "Low",
+      "components": {
+        "severity": 0.4,
+        "event_volume": 0.2667,
+        "negativity": 0.0,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.0293
+      },
+      "event_count": 4,
+      "counts_by_category": {
+        "diplomatic": 1,
+        "economic": 1,
+        "general": 2
+      },
+      "level_counts": {
+        "info": 2,
+        "low": 1,
+        "medium": 1
+      },
+      "worst_level": "medium",
+      "avg_sentiment": 0.2347,
+      "max_corroboration": 1,
+      "avg_risk_score": 10.0,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.0586,
+      "top_headlines": [
+        "Renewal of the GSF mandate and reactions at the Security Council - HaitiLibre . com : Haiti news 7 / 7",
+        "Haiti - Politics : National Program for Economic , Social , and Territorial Stabilization and Recovery",
+        "Haiti Inflation Slows to 17 %, Rates Held"
+      ]
+    },
+    {
+      "country": "AU",
+      "region": "Oceania",
+      "score": 19,
+      "band": "Low",
+      "components": {
+        "severity": 0.05,
+        "event_volume": 0.7333,
+        "negativity": 0.0,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.0806
+      },
+      "event_count": 11,
+      "counts_by_category": {
+        "general": 11
+      },
+      "level_counts": {
+        "info": 11
+      },
+      "worst_level": "info",
+      "avg_sentiment": 0.029,
+      "max_corroboration": 1,
+      "avg_risk_score": 3.18,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.1612,
+      "top_headlines": [
+        "Providing Japan with test ranges , Canberra risks becoming a target",
+        "OpenAI apologises to Australia for AI breaches",
+        "OpenAI pledges action after Australia AI hack"
+      ]
+    },
+    {
+      "country": "YE",
+      "region": "Middle East",
+      "score": 19,
+      "band": "Low",
+      "components": {
+        "severity": 0.15,
+        "event_volume": 0.2,
+        "negativity": 0.0583,
+        "corroboration": 0.2,
+        "seismic": 0.475,
+        "news_velocity": 0.022
+      },
+      "event_count": 3,
+      "counts_by_category": {
+        "diplomatic": 1,
+        "general": 2
+      },
+      "level_counts": {
+        "info": 2,
+        "low": 1
+      },
+      "worst_level": "low",
+      "avg_sentiment": -0.0583,
+      "max_corroboration": 1,
+      "avg_risk_score": 5.67,
+      "quake_count": 3,
+      "max_magnitude": 5.2,
+      "news_velocity_per_hour": 0.044,
+      "top_headlines": [
+        "We no longer eat three meal : Yemen displaced face daily fight for food | Conflict News",
+        "Signs of a Full - Scale Yemeni Offensive Against the Houthis",
+        "Rubio , Saudi Arabia foreign minister hold talks on Yemen , Hormuz Strait - Dominican Republic Post \u2013 Caribbean News , Business , Travel & Culture"
+      ]
+    },
+    {
+      "country": "CR",
+      "region": "Global",
+      "score": 18,
+      "band": "Low",
+      "components": {
+        "severity": 0.4,
+        "event_volume": 0.2,
+        "negativity": 0.0,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.022
+      },
+      "event_count": 3,
+      "counts_by_category": {
+        "diplomatic": 1,
+        "economic": 1,
+        "general": 1
+      },
+      "level_counts": {
+        "info": 1,
+        "low": 1,
+        "medium": 1
+      },
+      "worst_level": "medium",
+      "avg_sentiment": 0.0,
+      "max_corroboration": 1,
+      "avg_risk_score": 10.0,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.044,
+      "top_headlines": [
+        "Six thrilling Costa Rica trips with Times Holidays",
+        "Costa Rica Bill Would Make Unions Vote on Leader Terms",
+        "Costa Rica Inflation to Turn Positive , Bank Chief Expects"
+      ]
+    },
+    {
+      "country": "EG",
+      "region": "Africa",
+      "score": 16,
+      "band": "Low",
+      "components": {
+        "severity": 0.15,
+        "event_volume": 0.3333,
+        "negativity": 0.1848,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.0366
+      },
+      "event_count": 5,
+      "counts_by_category": {
+        "diplomatic": 1,
+        "general": 4
+      },
+      "level_counts": {
+        "info": 4,
+        "low": 1
+      },
+      "worst_level": "low",
+      "avg_sentiment": -0.1848,
+      "max_corroboration": 1,
+      "avg_risk_score": 4.0,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.0733,
+      "top_headlines": [
+        "Egypt 500 - km Sinai railway raises Israeli security concerns",
+        "Egypt seeks greater share of Nile water amid rising tension with Ethiopia",
+        "Tomb Raider : Legacy of Atlantis Drops New Look At the Designs And Ideas Behind Egypt Many Enemies"
+      ]
+    },
+    {
+      "country": "GR",
+      "region": "Europe",
+      "score": 16,
+      "band": "Low",
+      "components": {
+        "severity": 0.05,
+        "event_volume": 0.2,
+        "negativity": 0.203,
+        "corroboration": 0.2,
+        "seismic": 0.3375,
+        "news_velocity": 0.022
+      },
+      "event_count": 3,
+      "counts_by_category": {
+        "general": 3
+      },
+      "level_counts": {
+        "info": 3
+      },
+      "worst_level": "info",
+      "avg_sentiment": -0.203,
+      "max_corroboration": 1,
+      "avg_risk_score": 2.67,
+      "quake_count": 1,
+      "max_magnitude": 4.6,
+      "news_velocity_per_hour": 0.044,
+      "top_headlines": [
+        "Greece escalates Aegean tensions with military drill",
+        "Greece can install 8 . 6 GW of batteries by 2030",
+        "Greece to return remains of ancient Bulgarian tsar"
+      ]
+    },
+    {
+      "country": "MY",
+      "region": "Asia",
+      "score": 16,
+      "band": "Low",
+      "components": {
+        "severity": 0.05,
+        "event_volume": 0.3333,
+        "negativity": 0.0924,
+        "corroboration": 0.6,
+        "seismic": 0.0,
+        "news_velocity": 0.0366
+      },
+      "event_count": 5,
+      "counts_by_category": {
+        "general": 5
+      },
+      "level_counts": {
+        "info": 5
+      },
+      "worst_level": "info",
+      "avg_sentiment": -0.0924,
+      "max_corroboration": 3,
+      "avg_risk_score": 4.0,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.0733,
+      "top_headlines": [
+        "Malaysia begins Myanmar repatriations despite safety warnings by UN and rights groups",
+        "Malaysia begins Myanmar repatriations despite safety warnings by UN and rights groups",
+        "Malaysia begins Myanmar repatriations despite safety warnings by UN and rights groups"
+      ]
+    },
+    {
+      "country": "PE",
+      "region": "South America",
+      "score": 16,
+      "band": "Low",
+      "components": {
+        "severity": 0.15,
+        "event_volume": 0.2,
+        "negativity": 0.0,
+        "corroboration": 0.2,
+        "seismic": 0.3812,
+        "news_velocity": 0.022
+      },
+      "event_count": 3,
+      "counts_by_category": {
+        "diplomatic": 1,
+        "general": 2
+      },
+      "level_counts": {
+        "info": 2,
+        "low": 1
+      },
+      "worst_level": "low",
+      "avg_sentiment": 0.154,
+      "max_corroboration": 1,
+      "avg_risk_score": 4.67,
+      "quake_count": 2,
+      "max_magnitude": 4.5,
+      "news_velocity_per_hour": 0.044,
+      "top_headlines": [
+        "Delhi Assembly Speaker Vijender Gupta visits Peru Parliament , holds talks with Senator",
+        "Humbe Lima 2026 : Costa 21 Concert on 1 November",
+        "Peru Opposition Moves to Oust the Minister in Charge of Its Police"
+      ]
+    },
+    {
+      "country": "SY",
+      "region": "Middle East",
+      "score": 16,
+      "band": "Low",
+      "components": {
+        "severity": 0.15,
+        "event_volume": 0.2,
+        "negativity": 0.0,
+        "corroboration": 0.2,
+        "seismic": 0.3812,
+        "news_velocity": 0.022
+      },
+      "event_count": 3,
+      "counts_by_category": {
+        "diplomatic": 1,
+        "general": 2
+      },
+      "level_counts": {
+        "info": 2,
+        "low": 1
+      },
+      "worst_level": "low",
+      "avg_sentiment": 0.5158,
+      "max_corroboration": 1,
+      "avg_risk_score": 6.0,
+      "quake_count": 1,
+      "max_magnitude": 5.3,
+      "news_velocity_per_hour": 0.044,
+      "top_headlines": [
+        "Syria , Jordan hold defense talks to bolster border security cooperation",
+        "Kamal Alam - Syria Direct",
+        "Syria , Norwac discuss childhood cancer center , health cooperation"
+      ]
+    },
+    {
+      "country": "TR",
+      "region": "Middle East",
+      "score": 15,
+      "band": "Low",
+      "components": {
+        "severity": 0.05,
+        "event_volume": 0.2667,
+        "negativity": 0.0,
+        "corroboration": 0.2,
+        "seismic": 0.3812,
+        "news_velocity": 0.0293
+      },
+      "event_count": 4,
+      "counts_by_category": {
+        "general": 4
+      },
+      "level_counts": {
+        "info": 4
+      },
+      "worst_level": "info",
+      "avg_sentiment": 0.2677,
+      "max_corroboration": 1,
+      "avg_risk_score": 3.0,
+      "quake_count": 1,
+      "max_magnitude": 5.3,
+      "news_velocity_per_hour": 0.0586,
+      "top_headlines": [
+        "Historic Orient Express to make second Istanbul journey of 2026",
+        "Turkish - Israeli rift grows irreversibly amid Israeli expansionism and aggression",
+        "T\u00fcyap : Plast Eurasia connects European plastics trade with suppliers in Istanbul"
+      ]
+    },
+    {
+      "country": "XK",
+      "region": "Europe",
+      "score": 15,
+      "band": "Low",
+      "components": {
+        "severity": 0.05,
+        "event_volume": 0.0667,
+        "negativity": 0.6993,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.0073
+      },
+      "event_count": 1,
+      "counts_by_category": {
+        "general": 1
+      },
+      "level_counts": {
+        "info": 1
+      },
+      "worst_level": "info",
+      "avg_sentiment": -0.6993,
+      "max_corroboration": 1,
+      "avg_risk_score": 5.0,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.0147,
+      "top_headlines": [
+        "Frozen conflicts threaten stability in Belfast and Kosovo - Monadnock Ledger - Transcript"
+      ]
+    },
+    {
+      "country": "TW",
+      "region": "Asia",
+      "score": 14,
+      "band": "Low",
+      "components": {
+        "severity": 0.05,
+        "event_volume": 0.2,
+        "negativity": 0.0,
+        "corroboration": 0.2,
+        "seismic": 0.45,
+        "news_velocity": 0.022
+      },
+      "event_count": 3,
+      "counts_by_category": {
+        "general": 3
+      },
+      "level_counts": {
+        "info": 3
+      },
+      "worst_level": "info",
+      "avg_sentiment": 0.0,
+      "max_corroboration": 1,
+      "avg_risk_score": 2.0,
+      "quake_count": 2,
+      "max_magnitude": 5.6,
+      "news_velocity_per_hour": 0.044,
+      "top_headlines": [
+        "Trump and Xi didnt  talk much  about Taiwan . What does that say about where it stands ?",
+        "Taiwan Foreign Minister Visits Belize , One of 12 Allies",
+        "Taiwan taps US tech for sea drones to fend off China vast maritime fleet"
+      ]
+    },
+    {
+      "country": "PA",
+      "region": "Global",
+      "score": 13,
+      "band": "Low",
+      "components": {
+        "severity": 0.05,
+        "event_volume": 0.3333,
+        "negativity": 0.0,
+        "corroboration": 0.4,
+        "seismic": 0.0,
+        "news_velocity": 0.0366
+      },
+      "event_count": 5,
+      "counts_by_category": {
+        "general": 5
+      },
+      "level_counts": {
+        "info": 5
+      },
+      "worst_level": "info",
+      "avg_sentiment": 0.0,
+      "max_corroboration": 2,
+      "avg_risk_score": 3.6,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.0733,
+      "top_headlines": [
+        "Panama Canal disruption creates new cargo accumulation headache",
+        "Panama government to recommend copper mine restart through state tie - up , sources say",
+        "Panama government to recommend copper mine restart through state tie - up , sources say"
+      ]
+    },
+    {
+      "country": "PH",
+      "region": "Asia",
+      "score": 13,
+      "band": "Low",
+      "components": {
+        "severity": 0.05,
+        "event_volume": 0.0667,
+        "negativity": 0.0,
+        "corroboration": 0.2,
+        "seismic": 0.5563,
+        "news_velocity": 0.0073
+      },
+      "event_count": 1,
+      "counts_by_category": {
+        "general": 1
+      },
+      "level_counts": {
+        "info": 1
+      },
+      "worst_level": "info",
+      "avg_sentiment": 0.0,
+      "max_corroboration": 1,
+      "avg_risk_score": 2.0,
+      "quake_count": 5,
+      "max_magnitude": 4.9,
+      "news_velocity_per_hour": 0.0147,
+      "top_headlines": [
+        "Proforma Named a Woman - Led Top Workplace | The Manila Times"
+      ]
+    },
+    {
+      "country": "GH",
+      "region": "Africa",
+      "score": 12,
+      "band": "Low",
+      "components": {
+        "severity": 0.15,
+        "event_volume": 0.2667,
+        "negativity": 0.0,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.0293
+      },
+      "event_count": 4,
+      "counts_by_category": {
+        "diplomatic": 1,
+        "general": 3
+      },
+      "level_counts": {
+        "info": 3,
+        "low": 1
+      },
+      "worst_level": "low",
+      "avg_sentiment": 0.1472,
+      "max_corroboration": 1,
+      "avg_risk_score": 5.75,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.0586,
+      "top_headlines": [
+        "Ghana : Gcif Steps Up Public Education On Cyber Threats",
+        "Atiku asks FG to publish Nigeria - US health agreement after Ghana rejection - Latest News In Nigeria , Nigeria News Today , Your Online Nigerian Newspaper",
+        "Ghana Airports Company Wins More Awards for Accra Airport"
+      ]
+    },
+    {
+      "country": "KP",
+      "region": "Asia",
+      "score": 11,
+      "band": "Low",
+      "components": {
+        "severity": 0.05,
+        "event_volume": 0.2667,
+        "negativity": 0.0,
+        "corroboration": 0.4,
+        "seismic": 0.0,
+        "news_velocity": 0.0293
+      },
+      "event_count": 4,
+      "counts_by_category": {
+        "general": 4
+      },
+      "level_counts": {
+        "info": 4
+      },
+      "worst_level": "info",
+      "avg_sentiment": 0.3175,
+      "max_corroboration": 2,
+      "avg_risk_score": 4.5,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.0586,
+      "top_headlines": [
+        "Kim Jong Un a friend : Trump reasoning on why North Korea can have nuclear weapons but Iran cannot",
+        "Trump Says  Friend  Kim Jong Un Sets North Korea Apart From Iran on Nukes",
+        "North Korea denies planting mines that injured 3 South Korean soldiers , accuses Seoul of conspiracy"
+      ]
+    },
+    {
+      "country": "BD",
+      "region": "Asia",
+      "score": 10,
+      "band": "Low",
+      "components": {
+        "severity": 0.05,
+        "event_volume": 0.2,
+        "negativity": 0.1345,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.022
+      },
+      "event_count": 3,
+      "counts_by_category": {
+        "general": 3
+      },
+      "level_counts": {
+        "info": 3
+      },
+      "worst_level": "info",
+      "avg_sentiment": -0.1345,
+      "max_corroboration": 1,
+      "avg_risk_score": 4.0,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.044,
+      "top_headlines": [
+        "Bangladesh UN moment must become more than a speech",
+        "Bangladesh at the UN General Assembly : A Milestone in Economic Diplomacy and New Global Partnerships",
+        "Bangladesh US buying spree fails to bring export benefit"
+      ]
+    },
+    {
+      "country": "FI",
+      "region": "Europe",
+      "score": 10,
+      "band": "Low",
+      "components": {
+        "severity": 0.05,
+        "event_volume": 0.2,
+        "negativity": 0.154,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.022
+      },
+      "event_count": 3,
+      "counts_by_category": {
+        "general": 3
+      },
+      "level_counts": {
+        "info": 3
+      },
+      "worst_level": "info",
+      "avg_sentiment": -0.154,
+      "max_corroboration": 1,
+      "avg_risk_score": 2.67,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.044,
+      "top_headlines": [
+        "Tanzania , Finland deepen ties in mining through expertise in mineral beneficiation , smelting , mineral value addition",
+        "Common diseases decline in Helsinki as health gaps persist",
+        "NordX Metals Corp .: NordX Metals Intersects 2 . 35m at 0 . 62 % U3O8 from 9 . 4m Downhole in First Diamond Drillhole at the Riutta Uranium Project , Finland"
+      ]
+    },
+    {
+      "country": "JO",
+      "region": "Middle East",
+      "score": 9,
+      "band": "Low",
+      "components": {
+        "severity": 0.15,
+        "event_volume": 0.1333,
+        "negativity": 0.0,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.0147
+      },
+      "event_count": 2,
+      "counts_by_category": {
+        "diplomatic": 1,
+        "general": 1
+      },
+      "level_counts": {
+        "info": 1,
+        "low": 1
+      },
+      "worst_level": "low",
+      "avg_sentiment": 0.393,
+      "max_corroboration": 1,
+      "avg_risk_score": 6.5,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.0293,
+      "top_headlines": [
+        "Syria , Jordan hold defense talks to bolster border security cooperation",
+        "TRENDS participates in  Knights of the Message  conference in Jordan"
+      ]
+    },
+    {
+      "country": "KE",
+      "region": "Africa",
+      "score": 9,
+      "band": "Low",
+      "components": {
+        "severity": 0.05,
+        "event_volume": 0.2667,
+        "negativity": 0.0,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.0293
+      },
+      "event_count": 4,
+      "counts_by_category": {
+        "general": 4
+      },
+      "level_counts": {
+        "info": 4
+      },
+      "worst_level": "info",
+      "avg_sentiment": 0.1904,
+      "max_corroboration": 1,
+      "avg_risk_score": 2.75,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.0586,
+      "top_headlines": [
+        "APO Group - Africa Newsroom / Press release | Sri Lanka \u2013 Kenya Digital Cooperation Strengthened Through Engagement with Muranga County",
+        "Super 90 season four to be staged in Kenya from December 3 to 12",
+        "Dangote Refinery : First Cargo Docks at Lamu Port , Kenya"
+      ]
+    },
+    {
+      "country": "MA",
+      "region": "Africa",
+      "score": 9,
+      "band": "Low",
+      "components": {
+        "severity": 0.05,
+        "event_volume": 0.2667,
+        "negativity": 0.0,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.0293
+      },
+      "event_count": 4,
+      "counts_by_category": {
+        "general": 4
+      },
+      "level_counts": {
+        "info": 4
+      },
+      "worst_level": "info",
+      "avg_sentiment": 0.0,
+      "max_corroboration": 1,
+      "avg_risk_score": 3.0,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.0586,
+      "top_headlines": [
+        "International media hails Morocco historic appointment of first female head of government \u2013 The North Africa Post",
+        "African Development Bank Grants Morocco \u20ac270 Million to Modernize Airports \u2013 The North Africa Post",
+        "Morocco appoints first female prime minister"
+      ]
+    },
+    {
+      "country": "SD",
+      "region": "Africa",
+      "score": 9,
+      "band": "Low",
+      "components": {
+        "severity": 0.05,
+        "event_volume": 0.2667,
+        "negativity": 0.0,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.0293
+      },
+      "event_count": 4,
+      "counts_by_category": {
+        "general": 4
+      },
+      "level_counts": {
+        "info": 4
+      },
+      "worst_level": "info",
+      "avg_sentiment": 0.0,
+      "max_corroboration": 1,
+      "avg_risk_score": 2.0,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.0586,
+      "top_headlines": [
+        "Algeria : President Tebboune Reaffirms Algeria Principled , Steadfast Commitment to South Sudan",
+        "East Africa : Sudan Burhan Rejects US Truce Conditions",
+        "Op - Ed| In the caretaker trap ? The legal end of South Sudan transition"
+      ]
+    },
+    {
+      "country": "TN",
+      "region": "Africa",
+      "score": 9,
+      "band": "Low",
+      "components": {
+        "severity": 0.15,
+        "event_volume": 0.1333,
+        "negativity": 0.0,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.0147
+      },
+      "event_count": 2,
+      "counts_by_category": {
+        "environmental": 1,
+        "general": 1
+      },
+      "level_counts": {
+        "info": 1,
+        "low": 1
+      },
+      "worst_level": "low",
+      "avg_sentiment": 0.0,
+      "max_corroboration": 1,
+      "avg_risk_score": 5.0,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.0293,
+      "top_headlines": [
+        "Tunisia plastic pollution could cost US$10 billion by 2040",
+        "R6 . 5bn and counting : SA tourism is losing out to Morocco and Tunisia"
+      ]
+    },
+    {
+      "country": "UG",
+      "region": "Africa",
+      "score": 9,
+      "band": "Low",
+      "components": {
+        "severity": 0.05,
+        "event_volume": 0.2667,
+        "negativity": 0.0,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.0293
+      },
+      "event_count": 4,
+      "counts_by_category": {
+        "general": 4
+      },
+      "level_counts": {
+        "info": 4
+      },
+      "worst_level": "info",
+      "avg_sentiment": 0.1155,
+      "max_corroboration": 1,
+      "avg_risk_score": 2.5,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.0586,
+      "top_headlines": [
+        "Uganda Food Prices Soar , Forcing Families to Eat Less and Cheaper",
+        "Uganda Revitalizes Tourism Sector Post - Ebola with $1 . 6 Billion Ambition",
+        "Uganda Calls for Stronger Global Action Against Online Scams"
+      ]
+    },
+    {
+      "country": "UZ",
+      "region": "Asia",
+      "score": 9,
+      "band": "Low",
+      "components": {
+        "severity": 0.05,
+        "event_volume": 0.2667,
+        "negativity": 0.0,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.0293
+      },
+      "event_count": 4,
+      "counts_by_category": {
+        "general": 4
+      },
+      "level_counts": {
+        "info": 4
+      },
+      "worst_level": "info",
+      "avg_sentiment": 0.6119,
+      "max_corroboration": 1,
+      "avg_risk_score": 4.5,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.0586,
+      "top_headlines": [
+        "Azerbaijan , Uzbekistan sign new roadmap for military cooperation",
+        "Azerbaijan and Uzbekistan sign bilateral military cooperation plan for 2027",
+        "Uzbekistan Railways , EU seek stronger rail links via Trans - Caspian route"
+      ]
+    },
+    {
+      "country": "EC",
+      "region": "South America",
+      "score": 8,
+      "band": "Low",
+      "components": {
+        "severity": 0.05,
+        "event_volume": 0.2,
+        "negativity": 0.0,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.022
+      },
+      "event_count": 3,
+      "counts_by_category": {
+        "general": 3
+      },
+      "level_counts": {
+        "info": 3
+      },
+      "worst_level": "info",
+      "avg_sentiment": 0.0,
+      "max_corroboration": 1,
+      "avg_risk_score": 2.0,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.044,
+      "top_headlines": [
+        "Grupo Frontera Quito 2026 : Coliseo Rumi\u00f1ahui on 9 October",
+        "Two Inmates Flee Ecuador Cuenca Jail in Bedsheet Escape",
+        "Ecuador Social Security Gets Noboa Party Director"
+      ]
+    },
+    {
+      "country": "GE",
+      "region": "Asia",
+      "score": 8,
+      "band": "Low",
+      "components": {
+        "severity": 0.15,
+        "event_volume": 0.0667,
+        "negativity": 0.0,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.0073
+      },
+      "event_count": 1,
+      "counts_by_category": {
+        "diplomatic": 1
+      },
+      "level_counts": {
+        "low": 1
+      },
+      "worst_level": "low",
+      "avg_sentiment": 0.4621,
+      "max_corroboration": 1,
+      "avg_risk_score": 10.0,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.0147,
+      "top_headlines": [
+        "Georgia election board urges voting software update over privacy"
+      ]
+    },
+    {
+      "country": "HU",
+      "region": "Europe",
+      "score": 8,
+      "band": "Low",
+      "components": {
+        "severity": 0.15,
+        "event_volume": 0.0667,
+        "negativity": 0.0,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.0073
+      },
+      "event_count": 1,
+      "counts_by_category": {
+        "diplomatic": 1
+      },
+      "level_counts": {
+        "low": 1
+      },
+      "worst_level": "low",
+      "avg_sentiment": 0.4621,
+      "max_corroboration": 1,
+      "avg_risk_score": 10.0,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.0147,
+      "top_headlines": [
+        "Anaergia Inc .: Anaergia and TisVet Sign C$36 million Technology Agreement for Major Agricultural - Waste - to - Energy Project in Hungary"
+      ]
+    },
+    {
+      "country": "LK",
+      "region": "Asia",
+      "score": 8,
+      "band": "Low",
+      "components": {
+        "severity": 0.05,
+        "event_volume": 0.2,
+        "negativity": 0.0,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.022
+      },
+      "event_count": 3,
+      "counts_by_category": {
+        "general": 3
+      },
+      "level_counts": {
+        "info": 3
+      },
+      "worst_level": "info",
+      "avg_sentiment": 0.0998,
+      "max_corroboration": 1,
+      "avg_risk_score": 3.67,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.044,
+      "top_headlines": [
+        "UN Slams Sri Lanka Over Detention of Former Spy Chief",
+        "APO Group - Africa Newsroom / Press release | Sri Lanka \u2013 Kenya Digital Cooperation Strengthened Through Engagement with Muranga County",
+        "CREDAI Chennai Hosts Member Interaction with Port City Colombo"
+      ]
+    },
+    {
+      "country": "PY",
+      "region": "South America",
+      "score": 8,
+      "band": "Low",
+      "components": {
+        "severity": 0.15,
+        "event_volume": 0.0667,
+        "negativity": 0.0,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.0073
+      },
+      "event_count": 1,
+      "counts_by_category": {
+        "diplomatic": 1
+      },
+      "level_counts": {
+        "low": 1
+      },
+      "worst_level": "low",
+      "avg_sentiment": 0.4621,
+      "max_corroboration": 1,
+      "avg_risk_score": 10.0,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.0147,
+      "top_headlines": [
+        "Paraguay Municipal Elections Draw 5 Million Voters"
+      ]
+    },
+    {
+      "country": "SE",
+      "region": "Europe",
+      "score": 8,
+      "band": "Low",
+      "components": {
+        "severity": 0.05,
+        "event_volume": 0.2,
+        "negativity": 0.0,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.022
+      },
+      "event_count": 3,
+      "counts_by_category": {
+        "general": 3
+      },
+      "level_counts": {
+        "info": 3
+      },
+      "worst_level": "info",
+      "avg_sentiment": 0.154,
+      "max_corroboration": 1,
+      "avg_risk_score": 2.67,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.044,
+      "top_headlines": [
+        "Sweden contributes fighter jets to NATO mission in Poland again",
+        "Sweden boosts cyber threat security defences amid AI advances",
+        "Payhawk makes Stockholm its Nordic hub in European expansion"
+      ]
+    },
+    {
+      "country": "AO",
+      "region": "Africa",
+      "score": 6,
+      "band": "Low",
+      "components": {
+        "severity": 0.05,
+        "event_volume": 0.1333,
+        "negativity": 0.0,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.0147
+      },
+      "event_count": 2,
+      "counts_by_category": {
+        "general": 2
+      },
+      "level_counts": {
+        "info": 2
+      },
+      "worst_level": "info",
+      "avg_sentiment": 0.3808,
+      "max_corroboration": 1,
+      "avg_risk_score": 3.5,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.0293,
+      "top_headlines": [
+        "Tinubu diplomatic hat - trick : Dignity in Luanda , Destiny in Delhi , Justice in New York",
+        "Angola Reaches 992 Industrial Units Milestone"
+      ]
+    },
+    {
+      "country": "AT",
+      "region": "Europe",
+      "score": 6,
+      "band": "Low",
+      "components": {
+        "severity": 0.05,
+        "event_volume": 0.1333,
+        "negativity": 0.0,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.0147
+      },
+      "event_count": 2,
+      "counts_by_category": {
+        "general": 2
+      },
+      "level_counts": {
+        "info": 2
+      },
+      "worst_level": "info",
+      "avg_sentiment": 0.0,
+      "max_corroboration": 1,
+      "avg_risk_score": 2.0,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.0293,
+      "top_headlines": [
+        "EQS Newswire : Hong Kong Science and Technology Parks Corporation : HKSTP Leads Delegation to Germany and Austria",
+        "Empowerment teams occupy both U20 MEVZA podiums \u2013 Czechia , Croatia , Austria , Slovenia sweep the medals"
+      ]
+    },
+    {
+      "country": "CD",
+      "region": "Africa",
+      "score": 6,
+      "band": "Low",
+      "components": {
+        "severity": 0.05,
+        "event_volume": 0.1333,
+        "negativity": 0.0,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.0147
+      },
+      "event_count": 2,
+      "counts_by_category": {
+        "general": 2
+      },
+      "level_counts": {
+        "info": 2
+      },
+      "worst_level": "info",
+      "avg_sentiment": 0.0,
+      "max_corroboration": 1,
+      "avg_risk_score": 2.0,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.0293,
+      "top_headlines": [
+        "Customs repatriates baby gorilla to Congo",
+        "Congo - Brazzaville Renews Bid for UN Security Council Seat"
+      ]
+    },
+    {
+      "country": "DZ",
+      "region": "Africa",
+      "score": 6,
+      "band": "Low",
+      "components": {
+        "severity": 0.05,
+        "event_volume": 0.1333,
+        "negativity": 0.0,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.0147
+      },
+      "event_count": 2,
+      "counts_by_category": {
+        "general": 2
+      },
+      "level_counts": {
+        "info": 2
+      },
+      "worst_level": "info",
+      "avg_sentiment": 0.0,
+      "max_corroboration": 1,
+      "avg_risk_score": 2.0,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.0293,
+      "top_headlines": [
+        "Algeria : President Tebboune Reaffirms Algeria Principled , Steadfast Commitment to South Sudan",
+        "Algeria plastic components factory strengthens auto industry"
+      ]
+    },
+    {
+      "country": "GT",
+      "region": "Global",
+      "score": 6,
+      "band": "Low",
+      "components": {
+        "severity": 0.05,
+        "event_volume": 0.1333,
+        "negativity": 0.0,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.0147
+      },
+      "event_count": 2,
+      "counts_by_category": {
+        "general": 2
+      },
+      "level_counts": {
+        "info": 2
+      },
+      "worst_level": "info",
+      "avg_sentiment": 0.0,
+      "max_corroboration": 1,
+      "avg_risk_score": 2.0,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.0293,
+      "top_headlines": [
+        "Belize Tracks Guatemalan Plane ; Guatemala Denies It",
+        "Guatemala Fuel Tax Cut Sits on the President Desk : What Expats Need to Know"
+      ]
+    },
+    {
+      "country": "NE",
+      "region": "Africa",
+      "score": 6,
+      "band": "Low",
+      "components": {
+        "severity": 0.05,
+        "event_volume": 0.1333,
+        "negativity": 0.0,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.0147
+      },
+      "event_count": 2,
+      "counts_by_category": {
+        "general": 2
+      },
+      "level_counts": {
+        "info": 2
+      },
+      "worst_level": "info",
+      "avg_sentiment": 0.0,
+      "max_corroboration": 1,
+      "avg_risk_score": 4.0,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.0293,
+      "top_headlines": [
+        "FG Seeks Stronger Water Diplomacy in Niger , Lake Chad Basins",
+        "Niger water electricity shortages grip the Agadez region"
+      ]
+    },
+    {
+      "country": "TZ",
+      "region": "Africa",
+      "score": 6,
+      "band": "Low",
+      "components": {
+        "severity": 0.05,
+        "event_volume": 0.1333,
+        "negativity": 0.0,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.0147
+      },
+      "event_count": 2,
+      "counts_by_category": {
+        "general": 2
+      },
+      "level_counts": {
+        "info": 2
+      },
+      "worst_level": "info",
+      "avg_sentiment": 0.0,
+      "max_corroboration": 1,
+      "avg_risk_score": 2.0,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.0293,
+      "top_headlines": [
+        "Tanzania , Finland deepen ties in mining through expertise in mineral beneficiation , smelting , mineral value addition",
+        "Tanzania seeks bigger share of European capital"
+      ]
+    },
+    {
+      "country": "AM",
+      "region": "Asia",
+      "score": 5,
+      "band": "Low",
+      "components": {
+        "severity": 0.05,
+        "event_volume": 0.0667,
+        "negativity": 0.0,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.0073
+      },
+      "event_count": 1,
+      "counts_by_category": {
+        "general": 1
+      },
+      "level_counts": {
+        "info": 1
+      },
+      "worst_level": "info",
+      "avg_sentiment": 0.7616,
+      "max_corroboration": 1,
+      "avg_risk_score": 5.0,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.0147,
+      "top_headlines": [
+        "US official discusses critical minerals cooperation in Armenia"
+      ]
+    },
+    {
+      "country": "DK",
+      "region": "Europe",
+      "score": 5,
+      "band": "Low",
+      "components": {
+        "severity": 0.05,
+        "event_volume": 0.0667,
+        "negativity": 0.0,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.0073
+      },
+      "event_count": 1,
+      "counts_by_category": {
+        "general": 1
+      },
+      "level_counts": {
+        "info": 1
+      },
+      "worst_level": "info",
+      "avg_sentiment": 0.4621,
+      "max_corroboration": 1,
+      "avg_risk_score": 4.0,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.0147,
+      "top_headlines": [
+        "US - Denmark deal on Greenland is a reward for American bullying \u2013 The Irish Times"
+      ]
+    },
+    {
+      "country": "FJ",
+      "region": "Oceania",
+      "score": 5,
+      "band": "Low",
+      "components": {
+        "severity": 0.05,
+        "event_volume": 0.0667,
+        "negativity": 0.0,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.0073
+      },
+      "event_count": 1,
+      "counts_by_category": {
+        "general": 1
+      },
+      "level_counts": {
+        "info": 1
+      },
+      "worst_level": "info",
+      "avg_sentiment": 0.0,
+      "max_corroboration": 1,
+      "avg_risk_score": 2.0,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.0147,
+      "top_headlines": [
+        "Kalo Gold Corp .: Kalo Gold Confirm Gold - Silver Electrum at Wainikoro , Sharpening Drill Targeting at Vatu Aurum Project , Fiji"
+      ]
+    },
+    {
+      "country": "GL",
+      "region": "North America",
+      "score": 5,
+      "band": "Low",
+      "components": {
+        "severity": 0.05,
+        "event_volume": 0.0667,
+        "negativity": 0.0,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.0073
+      },
+      "event_count": 1,
+      "counts_by_category": {
+        "general": 1
+      },
+      "level_counts": {
+        "info": 1
+      },
+      "worst_level": "info",
+      "avg_sentiment": 0.4621,
+      "max_corroboration": 1,
+      "avg_risk_score": 4.0,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.0147,
+      "top_headlines": [
+        "US - Denmark deal on Greenland is a reward for American bullying \u2013 The Irish Times"
+      ]
+    },
+    {
+      "country": "HR",
+      "region": "Europe",
+      "score": 5,
+      "band": "Low",
+      "components": {
+        "severity": 0.05,
+        "event_volume": 0.0667,
+        "negativity": 0.0,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.0073
+      },
+      "event_count": 1,
+      "counts_by_category": {
+        "general": 1
+      },
+      "level_counts": {
+        "info": 1
+      },
+      "worst_level": "info",
+      "avg_sentiment": 0.0,
+      "max_corroboration": 1,
+      "avg_risk_score": 2.0,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.0147,
+      "top_headlines": [
+        "Empowerment teams occupy both U20 MEVZA podiums \u2013 Czechia , Croatia , Austria , Slovenia sweep the medals"
+      ]
+    },
+    {
+      "country": "JM",
+      "region": "Global",
+      "score": 5,
+      "band": "Low",
+      "components": {
+        "severity": 0.05,
+        "event_volume": 0.0667,
+        "negativity": 0.0,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.0073
+      },
+      "event_count": 1,
+      "counts_by_category": {
+        "general": 1
+      },
+      "level_counts": {
+        "info": 1
+      },
+      "worst_level": "info",
+      "avg_sentiment": 0.0,
+      "max_corroboration": 1,
+      "avg_risk_score": 2.0,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.0147,
+      "top_headlines": [
+        "Jamaica PM Wants Long - Term Supply Contracts for Farmers"
+      ]
+    },
+    {
+      "country": "KG",
+      "region": "Asia",
+      "score": 5,
+      "band": "Low",
+      "components": {
+        "severity": 0.05,
+        "event_volume": 0.0667,
+        "negativity": 0.0,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.0073
+      },
+      "event_count": 1,
+      "counts_by_category": {
+        "general": 1
+      },
+      "level_counts": {
+        "info": 1
+      },
+      "worst_level": "info",
+      "avg_sentiment": 0.0,
+      "max_corroboration": 1,
+      "avg_risk_score": 2.0,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.0147,
+      "top_headlines": [
+        "Manas - Mahabharata centre opens in Kyrgyzstan"
+      ]
+    },
+    {
+      "country": "KZ",
+      "region": "Asia",
+      "score": 5,
+      "band": "Low",
+      "components": {
+        "severity": 0.05,
+        "event_volume": 0.0667,
+        "negativity": 0.0,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.0073
+      },
+      "event_count": 1,
+      "counts_by_category": {
+        "general": 1
+      },
+      "level_counts": {
+        "info": 1
+      },
+      "worst_level": "info",
+      "avg_sentiment": 0.0,
+      "max_corroboration": 1,
+      "avg_risk_score": 2.0,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.0147,
+      "top_headlines": [
+        "Kazakhstan Summer School Builds Clinical Research Capacity"
+      ]
+    },
+    {
+      "country": "SG",
+      "region": "Asia",
+      "score": 5,
+      "band": "Low",
+      "components": {
+        "severity": 0.05,
+        "event_volume": 0.0667,
+        "negativity": 0.0,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.0073
+      },
+      "event_count": 1,
+      "counts_by_category": {
+        "general": 1
+      },
+      "level_counts": {
+        "info": 1
+      },
+      "worst_level": "info",
+      "avg_sentiment": 0.4621,
+      "max_corroboration": 1,
+      "avg_risk_score": 4.0,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.0147,
+      "top_headlines": [
+        "Broadcom , Toppan open Singapore first advanced chip substrate facility"
+      ]
+    },
+    {
+      "country": "SI",
+      "region": "Europe",
+      "score": 5,
+      "band": "Low",
+      "components": {
+        "severity": 0.05,
+        "event_volume": 0.0667,
+        "negativity": 0.0,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.0073
+      },
+      "event_count": 1,
+      "counts_by_category": {
+        "general": 1
+      },
+      "level_counts": {
+        "info": 1
+      },
+      "worst_level": "info",
+      "avg_sentiment": 0.0,
+      "max_corroboration": 1,
+      "avg_risk_score": 2.0,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.0147,
+      "top_headlines": [
+        "Empowerment teams occupy both U20 MEVZA podiums \u2013 Czechia , Croatia , Austria , Slovenia sweep the medals"
+      ]
+    },
+    {
+      "country": "SV",
+      "region": "Global",
+      "score": 5,
+      "band": "Low",
+      "components": {
+        "severity": 0.05,
+        "event_volume": 0.0667,
+        "negativity": 0.0,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.0073
+      },
+      "event_count": 1,
+      "counts_by_category": {
+        "general": 1
+      },
+      "level_counts": {
+        "info": 1
+      },
+      "worst_level": "info",
+      "avg_sentiment": 0.0,
+      "max_corroboration": 1,
+      "avg_risk_score": 2.0,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.0147,
+      "top_headlines": [
+        "El Salvador Ex - Minister Sent to Trial Over US$10 . 6m"
+      ]
+    },
+    {
+      "country": "UY",
+      "region": "South America",
+      "score": 5,
+      "band": "Low",
+      "components": {
+        "severity": 0.05,
+        "event_volume": 0.0667,
+        "negativity": 0.0,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.0073
+      },
+      "event_count": 1,
+      "counts_by_category": {
+        "general": 1
+      },
+      "level_counts": {
+        "info": 1
+      },
+      "worst_level": "info",
+      "avg_sentiment": 0.0,
+      "max_corroboration": 1,
+      "avg_risk_score": 2.0,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.0147,
+      "top_headlines": [
+        "Uruguay National Party Sends Councillor to Ethics Panel"
+      ]
+    },
+    {
+      "country": "ZW",
+      "region": "Africa",
+      "score": 5,
+      "band": "Low",
+      "components": {
+        "severity": 0.05,
+        "event_volume": 0.0667,
+        "negativity": 0.0,
+        "corroboration": 0.2,
+        "seismic": 0.0,
+        "news_velocity": 0.0073
+      },
+      "event_count": 1,
+      "counts_by_category": {
+        "general": 1
+      },
+      "level_counts": {
+        "info": 1
+      },
+      "worst_level": "info",
+      "avg_sentiment": 0.0,
+      "max_corroboration": 1,
+      "avg_risk_score": 2.0,
+      "quake_count": 0,
+      "max_magnitude": 0.0,
+      "news_velocity_per_hour": 0.0147,
+      "top_headlines": [
+        "Powering Zimbabwe Mines | Closing the energy gap"
+      ]
+    }
+  ]
+}

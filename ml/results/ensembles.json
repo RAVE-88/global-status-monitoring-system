@@ -1,0 +1,158 @@
+{
+  "RandomForest": {
+    "model": "RandomForestClassifier",
+    "accuracy": 0.9917127071823204,
+    "precision_macro": 0.6638965835641736,
+    "recall_macro": 0.4444444444444444,
+    "f1_macro": 0.49860917941585536,
+    "roc_auc": null,
+    "confusion_matrix": [
+      [
+        358,
+        0,
+        0
+      ],
+      [
+        2,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    "labels": [
+      "0",
+      "1",
+      "2"
+    ],
+    "n_train": 1686,
+    "n_test": 362,
+    "feature_importances": [
+      {
+        "feature": "sentiment_score",
+        "importance": 0.3362
+      },
+      {
+        "feature": "upper_ratio",
+        "importance": 0.1914
+      },
+      {
+        "feature": "velocity_per_hour",
+        "importance": 0.1635
+      },
+      {
+        "feature": "text_len",
+        "importance": 0.1552
+      },
+      {
+        "feature": "word_count",
+        "importance": 0.113
+      },
+      {
+        "feature": "corroboration_count",
+        "importance": 0.0376
+      },
+      {
+        "feature": "is_breaking",
+        "importance": 0.003
+      }
+    ]
+  },
+  "AdaBoost": {
+    "model": "AdaBoostClassifier",
+    "accuracy": 0.9861878453038674,
+    "precision_macro": 0.664804469273743,
+    "recall_macro": 0.44258224705152077,
+    "f1_macro": 0.49813780260707635,
+    "roc_auc": null,
+    "confusion_matrix": [
+      [
+        356,
+        0,
+        2
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    "labels": [
+      "0",
+      "1",
+      "2"
+    ],
+    "n_train": 1686,
+    "n_test": 362,
+    "feature_importances": [
+      {
+        "feature": "sentiment_score",
+        "importance": 0.2963
+      },
+      {
+        "feature": "text_len",
+        "importance": 0.2414
+      },
+      {
+        "feature": "upper_ratio",
+        "importance": 0.2375
+      },
+      {
+        "feature": "velocity_per_hour",
+        "importance": 0.0931
+      },
+      {
+        "feature": "word_count",
+        "importance": 0.067
+      },
+      {
+        "feature": "corroboration_count",
+        "importance": 0.0641
+      },
+      {
+        "feature": "is_breaking",
+        "importance": 0.0007
+      }
+    ]
+  },
+  "Bagging(stumps)": {
+    "model": "BaggingClassifier",
+    "accuracy": 0.988950276243094,
+    "precision_macro": 0.3296500920810313,
+    "recall_macro": 0.3333333333333333,
+    "f1_macro": 0.3314814814814815,
+    "roc_auc": null,
+    "confusion_matrix": [
+      [
+        358,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    "labels": [
+      "0",
+      "1",
+      "2"
+    ],
+    "n_train": 1686,
+    "n_test": 362
+  }
+}

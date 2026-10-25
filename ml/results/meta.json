@@ -1,0 +1,28 @@
+{
+  "generated_utc": "2026-10-04T13:42:43.690296+00:00",
+  "project_title": "GLOBAL STATUS MONITORING SYSTEM",
+  "students": [
+    "24B11CS489: Viswajeet",
+    "24B11CS357: Priyamwda Rai",
+    "24B11CS461: Satya Sri Hema",
+    "24B11CS256: Uma Ram Charan"
+  ],
+  "n_raw_events": 2919,
+  "n_events": 2409,
+  "removed_duplicates": 510,
+  "imputed_values": 0,
+  "n_quakes": 1875,
+  "n_concept_rows": 2919,
+  "n_train": 1686,
+  "n_validation": 361,
+  "n_test": 362,
+  "feature_names": [
+    "sentiment_score",
+    "corroboration_count",
+    "is_breaking",
+    "text_len",
+    "word_count",
+    "upper_ratio",
+    "velocity_per_hour"
+  ]
+}

@@ -1,0 +1,9 @@
+# GSMS machine-learning laboratory dependencies.
+# Any Python 3.10+ works; these are the exact versions the lab was tested with
+# (python3.10 on the project VM).
+scikit-learn==1.5.0
+numpy==2.2.6
+pandas==2.2.2
+scipy==1.15.3
+joblib==1.4.2
+threadpoolctl==3.6.0
