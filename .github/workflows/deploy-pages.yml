@@ -4,11 +4,11 @@ on:
   push:
     branches: [gh-pages]
   workflow_dispatch:
+  # Dispatched runs always deploy the hardcoded gh-pages ref below, so an
+  # arbitrary-ref dispatch can only change which version of this file runs.
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
   group: pages
@@ -17,20 +17,32 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout gh-pages
-        uses: actions/checkout@v4
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
           ref: gh-pages
+      - name: Fail on unexpected dotfiles
+        run: |
+          extra=$(find . -maxdepth 1 -name '.*' ! -name '.' ! -name '.nojekyll' -print)
+          if [ -n "$extra" ]; then
+            echo "Unexpected dotfiles in deploy tree:"; echo "$extra"; exit 1
+          fi
+      - name: Prune CI metadata from published site
+        run: rm -rf .github
       - name: Configure Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
       - name: Upload site artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3
         with:
           path: .
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4
