@@ -2,13 +2,13 @@
 
 **An ML-powered global intelligence platform** — monitors world events, news, geopolitical conditions, disasters, and infrastructure signals in real time, and applies a full machine-learning stack to classify events, predict impact, and support global risk assessment.
 
-[![Live Demo](https://img.shields.io/badge/%F0%9F%8C%90_Live_Demo-rave--88.github.io%2Fglobal--status--monitoring--system-2ea44f)](https://rave-88.github.io/global-status-monitoring-system/)
+[![Live Demo](https://img.shields.io/badge/%F0%9F%8C%90_Live_Demo-rave--88.github.io-2ea44f)](https://rave-88.github.io/)
 [![Python](https://img.shields.io/badge/Python-3.10-3776AB?logo=python&logoColor=white)](ml/)
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.5-F7931E?logo=scikitlearn&logoColor=white)](ml/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)](src/)
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](LICENSE)
 
-> **▶ Live interface:** <https://rave-88.github.io/global-status-monitoring-system/> — open the ☰ menu → **Intelligence → ML Lab** to explore all ML models running on live world-event data in your browser.
+> **▶ Live interface:** <https://rave-88.github.io/> — open the ☰ menu → **Intelligence → ML Lab** to explore all ML models running on live world-event data in your browser.
 
 ---
 
