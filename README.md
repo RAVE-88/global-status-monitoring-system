@@ -177,7 +177,7 @@ npm install
 npm run dev
 ```
 
-Open http://localhost:3006/, then the menu, **Intelligence → ML Lab**. Everything works with zero environment variables; GDELT and USGS are keyless.
+Open http://localhost:3000/, then the menu, **Intelligence → ML Lab**. Everything works with zero environment variables; GDELT and USGS are keyless.
 
 **The Python ML Lab (reproducible pipeline):**
 
